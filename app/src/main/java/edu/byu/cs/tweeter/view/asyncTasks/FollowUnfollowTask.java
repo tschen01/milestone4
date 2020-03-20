@@ -2,8 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
-import edu.byu.cs.tweeter.net.request.FollowUnfollowRequest;
-import edu.byu.cs.tweeter.net.response.FollowUnfollowResponse;
+import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
+import byu.cs.cs340.model.services.response.FollowUnfollowResponse;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;
 
 public class FollowUnfollowTask extends AsyncTask<FollowUnfollowRequest, Void, FollowUnfollowResponse> {

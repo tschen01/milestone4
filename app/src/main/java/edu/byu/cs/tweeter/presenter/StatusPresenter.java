@@ -1,10 +1,10 @@
 package edu.byu.cs.tweeter.presenter;
 
-import edu.byu.cs.tweeter.model.services.StatusService;
-import edu.byu.cs.tweeter.net.request.CreateStatusRequest;
-import edu.byu.cs.tweeter.net.request.StatusRequest;
-import edu.byu.cs.tweeter.net.response.CreateStatusResponse;
-import edu.byu.cs.tweeter.net.response.StatusResponse;
+import byu.cs.cs340.model.services.request.CreateStatusRequest;
+import byu.cs.cs340.model.services.request.StatusRequest;
+import byu.cs.cs340.model.services.response.CreateStatusResponse;
+import byu.cs.cs340.model.services.response.StatusResponse;
+import edu.byu.cs.tweeter.model.services.StatusServiceProxy;
 
 public class StatusPresenter extends Presenter {
     private final View view;
@@ -20,15 +20,18 @@ public class StatusPresenter extends Presenter {
     }
 
     public StatusResponse getAllStatuses(StatusRequest request) {
-        return StatusService.getInstance().getAllStatus(request);
+        StatusServiceProxy serviceProxy = new StatusServiceProxy();
+        return serviceProxy.getAllStatus(request);
     }
 
     public StatusResponse getPersonalStatuses(StatusRequest request) {
-        return StatusService.getInstance().getPersonalStatuses(request);
+        StatusServiceProxy serviceProxy = new StatusServiceProxy();
+        return serviceProxy.getPersonalStatuses(request);
     }
 
     public CreateStatusResponse getCreateStatusResponse(CreateStatusRequest request) {
-        return StatusService.getInstance().createStatus(request);
+        StatusServiceProxy serviceProxy = new StatusServiceProxy();
+        return serviceProxy.createStatus(request);
     }
 
 

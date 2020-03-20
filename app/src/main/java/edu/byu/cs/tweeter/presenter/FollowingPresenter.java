@@ -1,17 +1,19 @@
 package edu.byu.cs.tweeter.presenter;
 
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.model.services.FollowingService;
-import edu.byu.cs.tweeter.net.request.FollowUnfollowRequest;
-import edu.byu.cs.tweeter.net.request.FolloweeRequest;
-import edu.byu.cs.tweeter.net.request.FollowingRequest;
-import edu.byu.cs.tweeter.net.response.FollowUnfollowResponse;
-import edu.byu.cs.tweeter.net.response.FolloweeResponse;
-import edu.byu.cs.tweeter.net.response.FollowingResponse;
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
+import byu.cs.cs340.model.services.request.FolloweeRequest;
+import byu.cs.cs340.model.services.request.FollowingRequest;
+import byu.cs.cs340.model.services.response.FollowUnfollowResponse;
+import byu.cs.cs340.model.services.response.FolloweeResponse;
+import byu.cs.cs340.model.services.response.FollowingResponse;
+import edu.byu.cs.tweeter.model.services.FollowingServiceProxy;
 
 public class FollowingPresenter extends Presenter {
 
     private final View view;
+
+    private FollowingServiceProxy serviceProxy = new FollowingServiceProxy();
 
     /**
      * The interface by which this presenter communicates with it's view.
@@ -25,21 +27,23 @@ public class FollowingPresenter extends Presenter {
     }
 
     public FollowingResponse getFollowing(FollowingRequest request) {
-        FollowingResponse response = FollowingService.getInstance().getFollowees(request);
-        return response;
+        FollowingServiceProxy serviceProxy = new FollowingServiceProxy();
+        return serviceProxy.getFollowees(request);
     }
 
     public FollowUnfollowResponse followUnfollow(FollowUnfollowRequest request) {
-        return FollowingService.getInstance().followUnfollow(request);
+        FollowingServiceProxy serviceProxy = new FollowingServiceProxy();
+        return serviceProxy.followUnfollow(request);
     }
 
     public Boolean following(User user) {
-        return FollowingService.getInstance().following(user);
+        FollowingServiceProxy serviceProxy = new FollowingServiceProxy();
+        return serviceProxy.following(user);
     }
 
     public FolloweeResponse getFollowing(FolloweeRequest request) {
-        FolloweeResponse response = FollowingService.getInstance().getFollowers(request);
-        return response;
+        FollowingServiceProxy serviceProxy = new FollowingServiceProxy();
+        return serviceProxy.getFollowers(request);
     }
 
 }

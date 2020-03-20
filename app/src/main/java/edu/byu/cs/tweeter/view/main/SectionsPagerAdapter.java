@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.services.LoginService;
+import edu.byu.cs.tweeter.model.services.LoginServiceProxy;
 import edu.byu.cs.tweeter.view.cache.DataCache;
 import edu.byu.cs.tweeter.view.main.followingFragments.FolloweeFragment;
 import edu.byu.cs.tweeter.view.main.followingFragments.FollowingFragment;
@@ -67,7 +67,7 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
     }
 
     private Boolean loggedIn() {
-        if (LoginService.getInstance().getCurrentUser().equals(DataCache.getInstance().getSelectedUser()) || DataCache.getInstance().getSelectedUser() == null) {
+        if (LoginServiceProxy.getInstance().getCurrentUser().equals(DataCache.getInstance().getSelectedUser()) || DataCache.getInstance().getSelectedUser() == null) {
             return true;
         }
         return false;

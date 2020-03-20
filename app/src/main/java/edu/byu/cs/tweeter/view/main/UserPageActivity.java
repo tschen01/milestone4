@@ -18,7 +18,6 @@ import android.widget.TextView;
 import edu.byu.cs.tweeter.R;
 import edu.byu.cs.tweeter.model.domain.Follow;
 import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.model.services.LoginService;
 import edu.byu.cs.tweeter.net.request.FollowUnfollowRequest;
 import edu.byu.cs.tweeter.net.response.FollowUnfollowResponse;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;

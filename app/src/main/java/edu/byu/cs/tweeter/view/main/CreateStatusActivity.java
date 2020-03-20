@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 import java.sql.Timestamp;
 
+import byu.cs.cs340.model.services.request.CreateStatusRequest;
+import byu.cs.cs340.model.services.response.CreateStatusResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.services.LoginService;
-import edu.byu.cs.tweeter.net.request.CreateStatusRequest;
-import edu.byu.cs.tweeter.net.response.CreateStatusResponse;
+import edu.byu.cs.tweeter.model.services.LoginServiceProxy;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.CreateStatusTask;
 
@@ -64,7 +64,7 @@ public class CreateStatusActivity extends AppCompatActivity implements StatusPre
             public void onClick(View v) {
                 Toast.makeText(getBaseContext(), "post", Toast.LENGTH_SHORT).show();
                 CreateStatusTask createStatusTask = new CreateStatusTask(presenter, observer);
-                CreateStatusRequest request = new CreateStatusRequest(LoginService.getInstance().getCurrentUser(), editText.getText().toString(),new Timestamp(System.currentTimeMillis()));
+                CreateStatusRequest request = new CreateStatusRequest(LoginServiceProxy.getInstance().getCurrentUser(), editText.getText().toString(),new Timestamp(System.currentTimeMillis()));
                 createStatusTask.execute(request);
             }
         });

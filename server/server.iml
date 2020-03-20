@@ -30,9 +30,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="shared" exported="" />
-    <orderEntry type="library" exported="" name="Gradle: annotations-java5-15.0" level="project" />
     <orderEntry type="library" exported="" name="Gradle: gson-2.8.6" level="project" />
-    <orderEntry type="module" module-name="shared" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: aws-lambda-java-core-1.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-jupiter-api-5.5.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-all-1.10.19" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: annotations-java5-15.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-commons-1.5.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: apiguardian-api-1.1.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: opentest4j-1.2.0" level="project" />
     <orderEntry type="module" module-name="shared" exported="" />
   </component>
 </module>

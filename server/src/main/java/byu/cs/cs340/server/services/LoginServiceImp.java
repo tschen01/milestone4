@@ -11,24 +11,6 @@ import byu.cs.cs340.server.dao.LoginDAO;
 
 public class LoginServiceImp implements LoginService {
 
-    private static LoginServiceImp instance;
-
-    private LoginResponse loginResponse;
-
-    private String authToken;
-
-    public static LoginServiceImp getInstance() {
-        if(instance == null) {
-            instance = new LoginServiceImp();
-        }
-        return instance;
-    }
-
-    @Override
-    public User getCurrentUser() {
-        return loginResponse.getUser();
-    }
-
     @Override
     public LoginResponse login(LoginRequest request) {
         LoginDAO loginDAO = new LoginDAO();
@@ -37,6 +19,7 @@ public class LoginServiceImp implements LoginService {
 
     @Override
     public SearchUserResponse searchUser(String alias) {
-        return null;
+        LoginDAO loginDAO = new LoginDAO();
+        return loginDAO.searchUser(alias);
     }
 }

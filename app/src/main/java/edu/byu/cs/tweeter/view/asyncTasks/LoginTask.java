@@ -2,8 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
-import edu.byu.cs.tweeter.net.request.LoginRequest;
-import edu.byu.cs.tweeter.net.response.LoginResponse;
+import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.response.LoginResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 
 

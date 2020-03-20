@@ -2,8 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
-import edu.byu.cs.tweeter.net.request.CreateStatusRequest;
-import edu.byu.cs.tweeter.net.response.CreateStatusResponse;
+import byu.cs.cs340.model.services.request.CreateStatusRequest;
+import byu.cs.cs340.model.services.response.CreateStatusResponse;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
 
 public class CreateStatusTask extends AsyncTask<CreateStatusRequest, Void, CreateStatusResponse> {

@@ -6,9 +6,9 @@ import android.util.Log;
 
 import java.io.IOException;
 
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.request.FolloweeRequest;
-import edu.byu.cs.tweeter.net.response.FolloweeResponse;
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.FolloweeRequest;
+import byu.cs.cs340.model.services.response.FolloweeResponse;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;
 import edu.byu.cs.tweeter.view.cache.ImageCache;
 import edu.byu.cs.tweeter.view.util.ImageUtils;

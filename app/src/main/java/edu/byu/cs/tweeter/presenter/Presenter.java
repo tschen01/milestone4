@@ -1,12 +1,12 @@
 package edu.byu.cs.tweeter.presenter;
 
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.model.services.LoginService;
+import byu.cs.cs340.model.domain.User;
+import edu.byu.cs.tweeter.model.services.LoginServiceProxy;
 
 public abstract class Presenter {
 
     public User getCurrentUser() {
-        return LoginService.getInstance().getCurrentUser();
+        return LoginServiceProxy.getInstance().getCurrentUser();
     }
 
 }

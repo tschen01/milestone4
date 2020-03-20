@@ -2,7 +2,7 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
-import edu.byu.cs.tweeter.model.domain.User;
+import byu.cs.cs340.model.domain.User;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;
 
 public class SetFollowButtonTask extends AsyncTask<User, Void, Boolean> {

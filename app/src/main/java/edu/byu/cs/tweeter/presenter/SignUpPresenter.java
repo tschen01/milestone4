@@ -1,10 +1,8 @@
 package edu.byu.cs.tweeter.presenter;
 
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.model.services.LoginService;
-import edu.byu.cs.tweeter.model.services.SignUpService;
-import edu.byu.cs.tweeter.net.request.SignUpRequest;
-import edu.byu.cs.tweeter.net.response.SignUpResponse;
+import byu.cs.cs340.model.services.request.SignUpRequest;
+import byu.cs.cs340.model.services.response.SignUpResponse;
+import edu.byu.cs.tweeter.model.services.SignUpServiceProxy;
 
 public class SignUpPresenter extends Presenter {
     private final View view;
@@ -20,7 +18,8 @@ public class SignUpPresenter extends Presenter {
     }
 
     public SignUpResponse signUp(SignUpRequest request) {
-        return SignUpService.getInstance().signUp(request);
+        SignUpServiceProxy serviceProxy = new SignUpServiceProxy();
+        return serviceProxy.signUp(request);
     }
 
 }

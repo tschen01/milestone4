@@ -1,6 +1,6 @@
 package edu.byu.cs.tweeter.view.cache;
 
-import edu.byu.cs.tweeter.model.domain.User;
+import byu.cs.cs340.model.domain.User;
 
 public class DataCache {
 

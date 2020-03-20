@@ -5,7 +5,8 @@ import android.graphics.drawable.Drawable;
 import java.util.HashMap;
 import java.util.Map;
 
-import edu.byu.cs.tweeter.model.domain.User;
+import byu.cs.cs340.model.domain.User;
+
 
 public class ImageCache {
 

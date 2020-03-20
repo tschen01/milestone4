@@ -1,12 +1,10 @@
 package edu.byu.cs.tweeter.presenter;
 
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.model.services.LoginService;
-import edu.byu.cs.tweeter.net.request.LoginRequest;
-import edu.byu.cs.tweeter.net.response.LoginResponse;
-import edu.byu.cs.tweeter.net.response.LogoutResponse;
-import edu.byu.cs.tweeter.net.response.SearchUserResponse;
-import edu.byu.cs.tweeter.presenter.Presenter;
+import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.response.LoginResponse;
+import byu.cs.cs340.model.services.response.LogoutResponse;
+import byu.cs.cs340.model.services.response.SearchUserResponse;
+import edu.byu.cs.tweeter.model.services.LoginServiceProxy;
 
 public class LoginPresenter extends Presenter {
     private final View view;
@@ -22,14 +20,14 @@ public class LoginPresenter extends Presenter {
     }
 
     public LoginResponse login(LoginRequest request) {
-        return LoginService.getInstance().login(request);
+        return LoginServiceProxy.getInstance().login(request);
     }
 
     public LogoutResponse logout() {
-        return LoginService.getInstance().logout();
+        return LoginServiceProxy.getInstance().logout();
     }
 
     public SearchUserResponse searchUser(String alias) {
-        return LoginService.getInstance().searchUser(alias);
+        return LoginServiceProxy.getInstance().searchUser(alias);
     }
 }

@@ -7,8 +7,8 @@ import java.util.Map;
 
 import byu.cs.cs340.model.domain.Follow;
 import byu.cs.cs340.model.domain.User;
-import byu.cs.cs340.model.services.request.FollowingRequest;
-import byu.cs.cs340.model.services.response.FollowingResponse;
+import byu.cs.cs340.model.services.request.FolloweeRequest;
+import byu.cs.cs340.model.services.response.FolloweeResponse;
 
 public class FollowerDAO {
     private static Map<User, List<User>> followeesByFollower;
@@ -23,7 +23,7 @@ public class FollowerDAO {
      *                other information required to satisfy the request.
      * @return the followees.
      */
-    public FollowingResponse getFollowees(FollowingRequest request) {
+    public FolloweeResponse getFollowees(FolloweeRequest request) {
 
         assert request.getLimit() > 0;
         assert request.getFollower() != null;
@@ -39,7 +39,7 @@ public class FollowerDAO {
 
         if(request.getLimit() > 0) {
             if (allFollowees != null) {
-                int followeesIndex = getFolloweesStartingIndex(request.getLastFollowee(), allFollowees);
+                int followeesIndex = getFolloweesStartingIndex(request.getLastFollower(), allFollowees);
 
                 for(int limitCounter = 0; followeesIndex < allFollowees.size() && limitCounter < request.getLimit(); followeesIndex++, limitCounter++) {
                     responseFollowees.add(allFollowees.get(followeesIndex));
@@ -49,7 +49,7 @@ public class FollowerDAO {
             }
         }
 
-        return new FollowingResponse(responseFollowees, hasMorePages);
+        return new FolloweeResponse(responseFollowees, hasMorePages);
     }
 
     /**

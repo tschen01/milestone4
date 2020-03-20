@@ -6,8 +6,9 @@ import android.util.Log;
 
 import java.io.IOException;
 
-import edu.byu.cs.tweeter.net.request.StatusRequest;
-import edu.byu.cs.tweeter.net.response.StatusResponse;
+import byu.cs.cs340.model.domain.Status;
+import byu.cs.cs340.model.services.request.StatusRequest;
+import byu.cs.cs340.model.services.response.StatusResponse;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
 import edu.byu.cs.tweeter.view.cache.ImageCache;
 import edu.byu.cs.tweeter.view.util.ImageUtils;
@@ -33,7 +34,7 @@ public class GetPersonalStatusTask extends AsyncTask<StatusRequest, Void, Status
     }
 
     private void loadImages(StatusResponse response) {
-        for (edu.byu.cs.tweeter.model.domain.Status status : response.getStatuses()) {
+        for (byu.cs.cs340.model.domain.Status status : response.getStatuses()) {
 
             Drawable drawable;
 

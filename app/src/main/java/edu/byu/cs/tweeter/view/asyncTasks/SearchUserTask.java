@@ -2,7 +2,7 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
-import edu.byu.cs.tweeter.net.response.SearchUserResponse;
+import byu.cs.cs340.model.services.response.SearchUserResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 
 public class SearchUserTask extends AsyncTask<String, Void, SearchUserResponse> {
