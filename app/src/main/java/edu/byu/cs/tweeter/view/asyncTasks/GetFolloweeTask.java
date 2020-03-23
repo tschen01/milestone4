@@ -29,7 +29,12 @@ public class GetFolloweeTask extends AsyncTask<FolloweeRequest, Void, FolloweeRe
 
     @Override
     protected FolloweeResponse doInBackground(FolloweeRequest... followingRequests) {
-        FolloweeResponse response = presenter.getFollowing(followingRequests[0]);
+        FolloweeResponse response = null;
+        try {
+            response = presenter.getFollowing(followingRequests[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         loadImages(response);
         return response;
     }

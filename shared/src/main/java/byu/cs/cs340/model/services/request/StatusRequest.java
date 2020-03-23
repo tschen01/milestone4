@@ -4,9 +4,11 @@ import byu.cs.cs340.model.domain.Status;
 import byu.cs.cs340.model.domain.User;
 
 public class StatusRequest {
-    private final User user;
-    private final int limit;
-    private final Status lastStatus;
+    private User user;
+    private int limit;
+    private Status lastStatus;
+
+    public StatusRequest() {}
 
     public StatusRequest(User user, int limit, Status lastStatus) {
         this.user = user;
@@ -18,11 +20,23 @@ public class StatusRequest {
         return user;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     public int getLimit() {
         return limit;
     }
 
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+
     public Status getLastStatus() {
         return lastStatus;
+    }
+
+    public void setLastStatus(Status lastStatus) {
+        this.lastStatus = lastStatus;
     }
 }

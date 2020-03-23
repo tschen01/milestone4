@@ -12,7 +12,20 @@ public class GetStoryHandler implements RequestHandler<StatusRequest, StatusResp
     @Override
     public StatusResponse handleRequest(StatusRequest request, Context context) {
         StatusServiceImp service = new StatusServiceImp();
-        return service.getPersonalStatuses(request);
+        StatusResponse response = service.getPersonalStatuses(request);
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
+
     }
 }
 

@@ -20,4 +20,7 @@ public class StatusResponse extends PagedResponse {
         return statuses;
     }
 
+    public void setStatuses(List<Status> statuses) {
+        this.statuses = statuses;
+    }
 }

@@ -12,6 +12,19 @@ public class GetFollowingHandler implements RequestHandler<FollowingRequest, Fol
     @Override
     public FollowingResponse handleRequest(FollowingRequest request, Context context) {
         FollowingServiceImpl service = new FollowingServiceImpl();
-        return service.getFollowees(request);
+        FollowingResponse response = service.getFollowees(request);
+
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
     }
 }

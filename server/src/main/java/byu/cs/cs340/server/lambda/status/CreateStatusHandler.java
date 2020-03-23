@@ -12,6 +12,18 @@ public class CreateStatusHandler implements RequestHandler<CreateStatusRequest, 
     @Override
     public CreateStatusResponse handleRequest(CreateStatusRequest request, Context context) {
         StatusServiceImp service = new StatusServiceImp();
-        return service.createStatus(request);
+        CreateStatusResponse response = service.createStatus(request);
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
     }
 }

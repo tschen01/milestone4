@@ -1,5 +1,7 @@
 package edu.byu.cs.tweeter.presenter;
 
+import java.io.IOException;
+
 import byu.cs.cs340.model.services.request.CreateStatusRequest;
 import byu.cs.cs340.model.services.request.StatusRequest;
 import byu.cs.cs340.model.services.response.CreateStatusResponse;
@@ -19,17 +21,17 @@ public class StatusPresenter extends Presenter {
         this.view = view;
     }
 
-    public StatusResponse getAllStatuses(StatusRequest request) {
+    public StatusResponse getAllStatuses(StatusRequest request) throws IOException {
         StatusServiceProxy serviceProxy = new StatusServiceProxy();
         return serviceProxy.getAllStatus(request);
     }
 
-    public StatusResponse getPersonalStatuses(StatusRequest request) {
+    public StatusResponse getPersonalStatuses(StatusRequest request) throws IOException {
         StatusServiceProxy serviceProxy = new StatusServiceProxy();
         return serviceProxy.getPersonalStatuses(request);
     }
 
-    public CreateStatusResponse getCreateStatusResponse(CreateStatusRequest request) {
+    public CreateStatusResponse getCreateStatusResponse(CreateStatusRequest request) throws IOException {
         StatusServiceProxy serviceProxy = new StatusServiceProxy();
         return serviceProxy.createStatus(request);
     }

@@ -14,7 +14,8 @@ public class PagedResponse extends Response {
         this.hasMorePages = hasMorePages;
     }
 
-    public boolean hasMorePages() {
+    public boolean getHasMorePages() {
         return hasMorePages;
     }
+
 }

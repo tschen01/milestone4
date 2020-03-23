@@ -116,9 +116,9 @@ public class UserGenerator {
      */
     public List<User> generateUsers(int count) {
 
-        List<User> users = new ArrayList<>(count);
-
+        List<User> users = new ArrayList<>();
         int c = 0;
+        if (count == 0) {return users;}
 
         while(users.size() < count) {
             // Randomly determine if the user will be male or female and generate a gender

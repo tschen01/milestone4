@@ -7,11 +7,17 @@ public class FollowUnfollowRequest {
 
     Follow follow;
 
+    public FollowUnfollowRequest(){}
+
     public FollowUnfollowRequest(Follow follow) {
         this.follow = follow;
     }
 
     public Follow getFollow() {
         return follow;
+    }
+
+    public void setFollow(Follow follow) {
+        this.follow = follow;
     }
 }

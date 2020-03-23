@@ -28,7 +28,12 @@ public class GetAllStatusTask extends AsyncTask<StatusRequest, Void, StatusRespo
 
     @Override
     protected StatusResponse doInBackground(StatusRequest... followingRequests) {
-        StatusResponse response = presenter.getAllStatuses(followingRequests[0]);
+        StatusResponse response = null;
+        try {
+            response = presenter.getAllStatuses(followingRequests[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         loadImages(response);
         return response;
     }

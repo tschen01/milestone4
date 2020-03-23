@@ -1,25 +1,22 @@
 package edu.byu.cs.tweeter.net;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import byu.cs.cs340.model.domain.User;
 import byu.cs.cs340.model.services.request.CreateStatusRequest;
 import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
 import byu.cs.cs340.model.services.request.FolloweeRequest;
 import byu.cs.cs340.model.services.request.FollowingRequest;
+import byu.cs.cs340.model.services.request.IfFollowingRequest;
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.request.SignUpRequest;
 import byu.cs.cs340.model.services.request.StatusRequest;
 import byu.cs.cs340.model.services.response.CreateStatusResponse;
 import byu.cs.cs340.model.services.response.FollowUnfollowResponse;
 import byu.cs.cs340.model.services.response.FolloweeResponse;
 import byu.cs.cs340.model.services.response.FollowingResponse;
+import byu.cs.cs340.model.services.response.IfFollowingResponse;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
@@ -29,7 +26,7 @@ import byu.cs.cs340.model.services.response.StatusResponse;
 public class ServerFacade {
     // TODO: Set this the the invoke URL of your API. Find it by going to your API in AWS, clicking
     //  on stages in the right-side menu, and clicking on the stage you deployed your API to.
-    private static final String SERVER_URL = "Insert your API invoke URL here";
+    private static final String SERVER_URL = "https://5pmgdic2f5.execute-api.us-west-2.amazonaws.com/tweeter-server";
 
     public FollowingResponse getFollowees(FollowingRequest request, String urlPath) throws IOException {
         ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
@@ -73,17 +70,18 @@ public class ServerFacade {
         return clientCommunicator.doPost(urlPath, request, null, FollowUnfollowResponse.class);
     }
 
-    public Boolean following(User user, String urlPath) throws IOException {
+    public IfFollowingResponse following(IfFollowingRequest request, String urlPath) throws IOException {
         ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
-        return clientCommunicator.doPost(urlPath, user, null, Boolean.class);
+        return clientCommunicator.doPost(urlPath, request, null, IfFollowingResponse.class);
     }
 
-    public SearchUserResponse searchUser(String alias, String urlPath) throws IOException {
+    public SearchUserResponse searchUser(SearchUserRequest request, String urlPath) throws IOException {
         ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
-        return clientCommunicator.doPost(urlPath, alias, null, SearchUserResponse.class);
+        return clientCommunicator.doPost(urlPath, request, null, SearchUserResponse.class);
     }
 
-    public LogoutResponse logout() {
-        return new LogoutResponse(true);
+    public LogoutResponse logout(String urlPath) throws IOException {
+        ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
+        return clientCommunicator.doPost(urlPath, null, null, LogoutResponse.class);
     }
 }

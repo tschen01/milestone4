@@ -97,15 +97,26 @@ public class ClientCommunicator {
 
     private String getResponse(HttpURLConnection connection) throws IOException {
 
-        try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+        int code = connection.getResponseCode();
+        if (code == 200) {
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
 
-            String inputLine;
-            StringBuilder response = new StringBuilder();
-            while ((inputLine = in.readLine()) != null) {
-                response.append(inputLine);
+                String inputLine;
+                StringBuilder response = new StringBuilder();
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+
+                return response.toString();
             }
-
-            return response.toString();
         }
+        else if (code == 400) {
+            throw new RuntimeException("400 error");
+        }
+        else if (code == 500) {
+            throw new RuntimeException("500 error");
+        }
+
+        return "unknow code";
     }
 }

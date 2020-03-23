@@ -2,6 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
+import java.io.IOException;
+
 import byu.cs.cs340.model.services.request.CreateStatusRequest;
 import byu.cs.cs340.model.services.response.CreateStatusResponse;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
@@ -23,7 +25,12 @@ public class CreateStatusTask extends AsyncTask<CreateStatusRequest, Void, Creat
 
     @Override
     protected CreateStatusResponse doInBackground(CreateStatusRequest... requests) {
-        CreateStatusResponse response = presenter.getCreateStatusResponse(requests[0]);
+        CreateStatusResponse response = null;
+        try {
+            response = presenter.getCreateStatusResponse(requests[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return response;
     }
 

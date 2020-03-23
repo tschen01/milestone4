@@ -48,10 +48,12 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
             return new FollowingFragment();
         }
         else if (position == FOLLOWER_FRAGMENT_POSITION) {
-                return new FolloweeFragment();
+            return new FolloweeFragment();
         } else {
             return PlaceholderFragment.newInstance(position + 1);
         }
+        //return PlaceholderFragment.newInstance(position + 1);
+
     }
 
     @Nullable

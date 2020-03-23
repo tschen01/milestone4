@@ -13,16 +13,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.FollowingRequest;
+import byu.cs.cs340.model.services.response.FollowingResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.request.FollowingRequest;
-import edu.byu.cs.tweeter.net.response.FollowingResponse;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.GetFollowingTask;
 import edu.byu.cs.tweeter.view.cache.DataCache;
@@ -99,7 +100,7 @@ public class FollowingFragment extends Fragment implements FollowingPresenter.Vi
 
         private final List<User> users = new ArrayList<>();
 
-        private edu.byu.cs.tweeter.model.domain.User lastFollowee;
+        private User lastFollowee;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -179,14 +180,19 @@ public class FollowingFragment extends Fragment implements FollowingPresenter.Vi
 
         @Override
         public void followeesRetrieved(FollowingResponse followingResponse) {
-            List<User> followees = followingResponse.getFollowees();
+            if (followingResponse != null) {
+                List<User> followees = followingResponse.getFollowees();
 
-            lastFollowee = (followees.size() > 0) ? followees.get(followees.size() -1) : null;
-            hasMorePages = followingResponse.hasMorePages();
+                lastFollowee = (followees.size() > 0) ? followees.get(followees.size() - 1) : null;
+                hasMorePages = followingResponse.getHasMorePages();
 
-            isLoading = false;
-            removeLoadingFooter();
-            followingRecyclerViewAdapter.addItems(followees);
+                isLoading = false;
+                removeLoadingFooter();
+                followingRecyclerViewAdapter.addItems(followees);
+            }
+            else {
+                Toast.makeText(getContext(), "followees not retrieved", Toast.LENGTH_SHORT).show();
+            }
         }
 
         private void addLoadingFooter() {

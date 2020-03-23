@@ -11,18 +11,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.response.LogoutResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.ServerFacade;
-import edu.byu.cs.tweeter.net.response.LogoutResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 import edu.byu.cs.tweeter.presenter.MainPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.LoadImageTask;
@@ -107,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements LoadImageTask.Loa
 
     @Override
     public void logoutRetrieved(LogoutResponse logoutResponse) {
-        if (logoutResponse.isSuccess()) {
+        if (logoutResponse != null && logoutResponse.isSuccess()) {
             DataCache.getInstance().setSelectedUser(null);
             finish();
             Intent intent = new Intent(getBaseContext(), LoginActivity.class);
@@ -118,4 +115,5 @@ public class MainActivity extends AppCompatActivity implements LoadImageTask.Loa
             Toast.makeText(getBaseContext(),"logout failed", Toast.LENGTH_LONG).show();
         }
     }
+
 }

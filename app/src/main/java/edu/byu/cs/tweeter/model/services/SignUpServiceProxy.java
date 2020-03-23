@@ -15,6 +15,8 @@ public class SignUpServiceProxy implements SignUpService {
 
     @Override
     public SignUpResponse signUp(SignUpRequest request) throws IOException {
-        return serverFacade.signUpResponse(request, URL_PATH);
+        SignUpResponse response = serverFacade.signUpResponse(request, URL_PATH);
+        LoginServiceProxy.getInstance().setCurrentUser(response.getUser());
+        return response;
     }
 }

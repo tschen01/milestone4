@@ -15,6 +15,19 @@ public class GetFeedHandler implements RequestHandler<StatusRequest, StatusRespo
     @Override
     public StatusResponse handleRequest(StatusRequest request, Context context) {
         StatusServiceImp service = new StatusServiceImp();
-        return service.getAllStatus(request);
+        StatusResponse response = service.getAllStatus(request);
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
+
     }
 }

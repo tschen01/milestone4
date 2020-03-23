@@ -26,14 +26,18 @@ public class FollowerDAO {
     public FolloweeResponse getFollowees(FolloweeRequest request) {
 
         assert request.getLimit() > 0;
-        assert request.getFollower() != null;
+        assert request.getFollowee() != null;
 
         if(followeesByFollower == null) {
             followeesByFollower = initializeFollowees();
         }
 
-        List<User> allFollowees = followeesByFollower.get(request.getFollower());
+        List<User> allFollowees = followeesByFollower.get(request.getFollowee());
         List<User> responseFollowees = new ArrayList<>(request.getLimit());
+        if (request.getLastFollower() != null &&
+                !allFollowees.contains(request.getLastFollower())) {
+            return new FolloweeResponse("no such user");
+        }
 
         boolean hasMorePages = false;
 
@@ -60,7 +64,7 @@ public class FollowerDAO {
         Map<User, List<User>> followeesByFollower = new HashMap<>();
 
         List<Follow> follows = getFollowGenerator().generateUsersAndFollows(20,
-                5, FollowGenerator.Sort.FOLLOWER_FOLLOWEE);
+                5, FollowGenerator.Sort.FOLLOWEE_FOLLOWER);
 
         // Populate a map of followees, keyed by follower so we can easily handle followee requests
         for(Follow follow : follows) {

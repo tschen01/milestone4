@@ -2,6 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
+import java.io.IOException;
+
 import byu.cs.cs340.model.services.response.LogoutResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 
@@ -22,7 +24,12 @@ public class LogoutTask extends AsyncTask<Void, Void, LogoutResponse> {
 
     @Override
     protected LogoutResponse doInBackground(Void... voids) {
-        LogoutResponse response = presenter.logout();
+        LogoutResponse response = null;
+        try {
+            response = presenter.logout();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return response;
     }
 

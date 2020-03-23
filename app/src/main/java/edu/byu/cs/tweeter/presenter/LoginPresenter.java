@@ -1,6 +1,9 @@
 package edu.byu.cs.tweeter.presenter;
 
+import java.io.IOException;
+
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
@@ -19,15 +22,15 @@ public class LoginPresenter extends Presenter {
         this.view = view;
     }
 
-    public LoginResponse login(LoginRequest request) {
+    public LoginResponse login(LoginRequest request) throws IOException {
         return LoginServiceProxy.getInstance().login(request);
     }
 
-    public LogoutResponse logout() {
+    public LogoutResponse logout() throws IOException {
         return LoginServiceProxy.getInstance().logout();
     }
 
-    public SearchUserResponse searchUser(String alias) {
+    public SearchUserResponse searchUser(SearchUserRequest alias) throws IOException {
         return LoginServiceProxy.getInstance().searchUser(alias);
     }
 }

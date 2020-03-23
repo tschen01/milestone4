@@ -62,9 +62,8 @@ public class CreateStatusActivity extends AppCompatActivity implements StatusPre
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getBaseContext(), "post", Toast.LENGTH_SHORT).show();
                 CreateStatusTask createStatusTask = new CreateStatusTask(presenter, observer);
-                CreateStatusRequest request = new CreateStatusRequest(LoginServiceProxy.getInstance().getCurrentUser(), editText.getText().toString(),new Timestamp(System.currentTimeMillis()));
+                CreateStatusRequest request = new CreateStatusRequest(LoginServiceProxy.getInstance().getCurrentUser(), editText.getText().toString(),(new Timestamp(System.currentTimeMillis())).toString());
                 createStatusTask.execute(request);
             }
         });
@@ -73,6 +72,12 @@ public class CreateStatusActivity extends AppCompatActivity implements StatusPre
 
     @Override
     public void CreateRetrieved(CreateStatusResponse response) {
+        if (response.isSuccess()) {
+            Toast.makeText(getBaseContext(), "posted", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(getBaseContext(), "error posting", Toast.LENGTH_SHORT).show();
+        }
         finish();
         Intent intent = new Intent(getBaseContext(), MainActivity.class);
         startActivity(intent);

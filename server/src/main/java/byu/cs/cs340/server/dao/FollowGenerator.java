@@ -58,7 +58,8 @@ public class FollowGenerator {
      * @param followersPerUser the number of followers each user will have.
      * @return the generated {@link Follow} objects.
      */
-    public List<Follow> generateUsersAndFollows(int userCount, int followersPerUser, Sort sortOrder) {
+    public List<Follow> generateUsersAndFollows(int userCount, int followersPerUser,
+                                                Sort sortOrder) {
         List<User> users = UserGenerator.getInstance().generateUsers(userCount);
         return generateFollowsForUsers(users, followersPerUser, sortOrder);
     }
@@ -87,16 +88,18 @@ public class FollowGenerator {
         assert followersPerUser < users.size() : followersPerUser;
 
         // For each user, generate a random number of followers between the specified min and max
-        for(User user : users) {
-            generateFollowersForUser(followersPerUser, user, users, follows);
+        for(int i = 0; i < users.size(); i++) {
+            generateFollowersForUser(followersPerUser, users.get(i), users, follows, i);
         }
 
         // Add the test user and make him follow everyone
-        User testUser = new User("Test", "User", UserGenerator.MALE_IMAGE_URL);
+        User testUser = new User("Test", "User", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/images/donald_duck.png");
 
         for(User user : users) {
-            Follow follow = new Follow(testUser, user);
-            follows.add(follow);
+            Follow follow1 = new Follow(testUser, user);
+            Follow follow2 = new Follow(user, testUser);
+            follows.add(follow1);
+            follows.add(follow2);
         }
 
         // Sort by the specified sort order
@@ -142,17 +145,18 @@ public class FollowGenerator {
         return follows;
     }
 
-    private void generateFollowersForUser(int numbFollowersToGenerate, User user, List<User> users, List<Follow> follows) {
+    private void generateFollowersForUser(int numbFollowersToGenerate, User user, List<User> users, List<Follow> follows, int userIndex) {
 
         Set<User> selectedFollowers = new HashSet<>();
 
-        int c = 0;
+        int c = userIndex;
         while(selectedFollowers.size() < numbFollowersToGenerate) {
             User follower;
             do {
                 follower = users.get(c);
+                c++;
+                if (c == users.size()) c = 0;
             } while (user == follower || selectedFollowers.contains(follower));
-            c++;
             selectedFollowers.add(follower);
             follows.add(new Follow(follower, user));
         }

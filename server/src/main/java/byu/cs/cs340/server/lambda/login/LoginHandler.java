@@ -12,6 +12,20 @@ public class LoginHandler implements RequestHandler<LoginRequest, LoginResponse>
     @Override
     public LoginResponse handleRequest(LoginRequest request, Context context) {
         LoginServiceImp service = new LoginServiceImp();
-        return service.login(request);
+        LoginResponse response = service.login(request);
+
+
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
     }
 }

@@ -5,39 +5,31 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 
+import byu.cs.cs340.model.services.request.SignUpRequest;
+import byu.cs.cs340.model.services.response.SignUpResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.net.request.SignUpRequest;
-import edu.byu.cs.tweeter.net.response.SignUpResponse;
 import edu.byu.cs.tweeter.presenter.SignUpPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.SignUpTask;
 import edu.byu.cs.tweeter.view.cache.DataCache;
-import edu.byu.cs.tweeter.view.main.LoginActivity;
 import edu.byu.cs.tweeter.view.main.MainActivity;
 
 import static android.app.Activity.RESULT_OK;
@@ -120,7 +112,6 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View, Si
             public void onClick(View v) {
                 SignUpTask loginTask = new SignUpTask(presenter, observer);
                 SignUpRequest request = new SignUpRequest(getUsername(), getPassword(),getFirstName(), getLastName(), selectedImage.toString());
-                System.out.println(selectedImage.toString());
                 loginTask.execute(request);
             }
         });
@@ -142,7 +133,7 @@ public class SignUpFragment extends Fragment implements SignUpPresenter.View, Si
 
     @Override
     public void signUpRetrieved(SignUpResponse signUpResponse) {
-        if (signUpResponse.isSuccess()) {
+        if (signUpResponse != null && signUpResponse.isSuccess()) {
             getActivity().finish();
             DataCache.getInstance().setSelectedUser(signUpResponse.getUser());
             Intent intent = new Intent(getContext(), MainActivity.class);

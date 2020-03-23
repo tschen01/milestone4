@@ -1,15 +1,10 @@
 package byu.cs.cs340.server.dao;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Random;
-import java.util.Set;
 
-import byu.cs.cs340.model.domain.Follow;
 import byu.cs.cs340.model.domain.Status;
 import byu.cs.cs340.model.domain.User;
 
@@ -36,25 +31,26 @@ public class StatusGenerator {
         return statusGenerator;
     }
 
-    public static List<Status> generateUsersAndStatus(int userCount) {
+    public List<Status> generateUsersAndStatus(int userCount) {
         List<User> users = UserGenerator.getInstance().generateUsers(userCount);
         return generateStatusForUsers(users);
     }
 
     @SuppressWarnings("WeakerAccess")
-    public static List<Status> generateStatusForUsers(List<User> users) {
+    public List<Status> generateStatusForUsers(List<User> users) {
         List<Status> statuses = new ArrayList<>();
 
         // Add the test user and make him follow everyone
         User testUser = new User("Test", "User", UserGenerator.MALE_IMAGE_URL);
 
-        for(int i = 0; i < users.size() + 10; i++) {
-            if (i < 10) {
-                statuses.add(new Status(testUser, String.valueOf(i), new Timestamp(System.currentTimeMillis())));
-            }
-            else {
-                statuses.add(new Status(users.get(i - 10), String.valueOf(i), new Timestamp(System.currentTimeMillis())));
-            }
+        statuses.add(new Status(testUser, "@TestUser", "AAAAAAAAAAAAAAAAAAAA"));
+        statuses.add(new Status(testUser, "www.google.com", "AAAAAAAAAAAAAAAAAAAA"));
+
+        for(int i = 0; i < 20; i++) {
+            statuses.add(new Status(testUser, String.valueOf(i), String.valueOf(i)));
+        }
+        for (int i = 0; i < users.size(); i++) {
+            statuses.add(new Status(users.get(i), String.valueOf(i), String.valueOf(i)));
         }
         // Sort by the specified sort order
         Collections.sort(statuses, new Comparator<Status>() {

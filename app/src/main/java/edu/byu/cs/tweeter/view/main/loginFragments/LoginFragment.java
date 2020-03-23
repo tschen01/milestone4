@@ -13,9 +13,9 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.response.LoginResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.net.request.LoginRequest;
-import edu.byu.cs.tweeter.net.response.LoginResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.LoginTask;
 import edu.byu.cs.tweeter.view.main.LoginActivity;
@@ -99,7 +99,7 @@ public class LoginFragment extends Fragment implements LoginPresenter.View, Logi
 
     @Override
     public void loginRetrieved(LoginResponse loginResponse) {
-        if (loginResponse.isSuccess()) {
+        if (loginResponse != null && loginResponse.isSuccess()) {
             getActivity().finish();
             Intent intent = new Intent(getContext(), MainActivity.class);
             startActivity(intent);

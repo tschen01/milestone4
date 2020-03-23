@@ -14,12 +14,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import byu.cs.cs340.model.domain.Follow;
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
+import byu.cs.cs340.model.services.request.IfFollowingRequest;
+import byu.cs.cs340.model.services.response.FollowUnfollowResponse;
+import byu.cs.cs340.model.services.response.IfFollowingResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.domain.Follow;
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.request.FollowUnfollowRequest;
-import edu.byu.cs.tweeter.net.response.FollowUnfollowResponse;
 import edu.byu.cs.tweeter.presenter.FollowingPresenter;
 import edu.byu.cs.tweeter.presenter.MainPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.FollowUnfollowTask;
@@ -69,7 +72,7 @@ public class UserPageActivity extends AppCompatActivity implements LoadImageTask
         }
 
         SetFollowButtonTask setFollowButtonTask = new SetFollowButtonTask(followingPresenter, this);
-        setFollowButtonTask.execute(user);
+        setFollowButtonTask.execute(new IfFollowingRequest(user));
 
         // Asynchronously load the user's image
         LoadImageTask loadImageTask = new LoadImageTask(this);
@@ -120,8 +123,11 @@ public class UserPageActivity extends AppCompatActivity implements LoadImageTask
     }
 
     @Override
-    public void followUnfollowRetrieved(Boolean response) {
-        if (!response) {
+    public void followUnfollowRetrieved(IfFollowingResponse response) {
+        if (response == null) {
+            Toast.makeText(getBaseContext(), "error unfollowing", Toast.LENGTH_SHORT).show();
+        }
+        else if (!response.isSuccess()) {
             followButton.setText("follow");
             followButton.setBackgroundColor(getResources().getColor(R.color.colorAccent));
         }
@@ -133,7 +139,10 @@ public class UserPageActivity extends AppCompatActivity implements LoadImageTask
 
     @Override
     public void followUnfollowRetrieved(FollowUnfollowResponse response) {
-        if (!response.getUnfollowed()) {
+        if (response == null) {
+            Toast.makeText(getBaseContext(), "error unfollowing", Toast.LENGTH_SHORT).show();
+        }
+        else if (!response.getUnfollowed()) {
             followButton.setText("unfollow");
             followButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
         }

@@ -8,9 +8,11 @@ import byu.cs.cs340.model.services.FollowingService;
 import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
 import byu.cs.cs340.model.services.request.FolloweeRequest;
 import byu.cs.cs340.model.services.request.FollowingRequest;
+import byu.cs.cs340.model.services.request.IfFollowingRequest;
 import byu.cs.cs340.model.services.response.FollowUnfollowResponse;
 import byu.cs.cs340.model.services.response.FolloweeResponse;
 import byu.cs.cs340.model.services.response.FollowingResponse;
+import byu.cs.cs340.model.services.response.IfFollowingResponse;
 import edu.byu.cs.tweeter.net.ServerFacade;
 
 public class FollowingServiceProxy implements FollowingService {
@@ -28,11 +30,12 @@ public class FollowingServiceProxy implements FollowingService {
 
     @Override
     public FollowUnfollowResponse followUnfollow(FollowUnfollowRequest request) throws IOException {
-        return serverFacade.followUnfollow(request, URL_PATH_FOLLOWUNFOLLOW);
+        FollowUnfollowResponse response = serverFacade.followUnfollow(request, URL_PATH_FOLLOWUNFOLLOW);
+        return response;
     }
 
     @Override
-    public Boolean following(User user) throws IOException {
+    public IfFollowingResponse following(IfFollowingRequest user) throws IOException {
         return serverFacade.following(user, URL_PATH_FOLLOW);
     }
 

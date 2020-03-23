@@ -7,7 +7,8 @@ import byu.cs.cs340.model.services.response.SignUpResponse;
 public class SignUpDAO {
     public SignUpResponse signUpResponse(SignUpRequest request) {
         if (request.getUsername().equals("invalid") || request.getPassword().equals("invalid")) {
-            return new SignUpResponse(false);
+            throw new RuntimeException("[400Error]");
+//            return new SignUpResponse(false);
         }
 
         User user = new User("Test", "User", UserGenerator.MALE_IMAGE_URL);

@@ -14,7 +14,20 @@ public class FollowUnfollowHandler implements RequestHandler<FollowUnfollowReque
     @Override
     public FollowUnfollowResponse handleRequest(FollowUnfollowRequest request, Context context) {
         FollowingServiceImpl service = new FollowingServiceImpl();
-        return service.followUnfollow(request);
+        FollowUnfollowResponse response = service.followUnfollow(request);
+        if (response == null) {
+            throw new RuntimeException("[500Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
+
     }
 }
 

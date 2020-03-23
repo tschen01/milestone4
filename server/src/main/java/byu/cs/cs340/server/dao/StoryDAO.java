@@ -13,8 +13,13 @@ import byu.cs.cs340.model.services.response.StatusResponse;
 public class StoryDAO {
     public StatusResponse getPersonalStatusResponse(StatusRequest request) {
 
+        if (request.getLastStatus() != null &&
+                !getStatusGenerator().generateUsersAndStatus(20).contains(request.getLastStatus())) {
+            return new StatusResponse(false);
+        }
+
         List<Status> responseStatuses = new ArrayList<>(request.getLimit());
-        List<Status> allStatuses = StatusGenerator.generateUsersAndStatus(0);
+        List<Status> allStatuses = getStatusGenerator().generateUsersAndStatus(20);
         boolean hasMorePages = false;
 
         if(request.getLimit() > 0) {
@@ -22,7 +27,12 @@ public class StoryDAO {
                 int statuesesIndex = getStatusStartingIndex(request.getLastStatus(), allStatuses);
 
                 for(int limitCounter = 0; statuesesIndex < allStatuses.size() && limitCounter < request.getLimit(); statuesesIndex++, limitCounter++) {
-                    responseStatuses.add(allStatuses.get(statuesesIndex));
+                    if (request.getUser().equals(allStatuses.get(statuesesIndex).getUser())) {
+                        responseStatuses.add(allStatuses.get(statuesesIndex));
+                    }
+                    else {
+                        limitCounter--;
+                    }
                 }
 
                 hasMorePages = statuesesIndex < allStatuses.size();
@@ -50,5 +60,8 @@ public class StoryDAO {
         return statusIndex;
     }
 
+    public StatusGenerator getStatusGenerator() {
+        return StatusGenerator.getInstance();
+    }
 
 }

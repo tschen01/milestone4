@@ -2,6 +2,8 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
+import java.io.IOException;
+
 import byu.cs.cs340.model.services.request.SignUpRequest;
 import byu.cs.cs340.model.services.response.SignUpResponse;
 import edu.byu.cs.tweeter.presenter.SignUpPresenter;
@@ -23,7 +25,12 @@ public class SignUpTask extends AsyncTask<SignUpRequest, Void, SignUpResponse> {
 
     @Override
     protected SignUpResponse doInBackground(SignUpRequest... signUpRequest) {
-        SignUpResponse response = presenter.signUp(signUpRequest[0]);
+        SignUpResponse response = null;
+        try {
+            response = presenter.signUp(signUpRequest[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return response;
     }
 

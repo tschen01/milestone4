@@ -7,9 +7,6 @@ public class FollowUnfollowResponse extends Response {
     public FollowUnfollowResponse(boolean success) {
         super(success);
     }
-    public FollowUnfollowResponse(boolean success, String error) {
-        super(success, error);
-    }
 
     public FollowUnfollowResponse(boolean success, Boolean unfollowed) {
         super(success);
@@ -17,6 +14,13 @@ public class FollowUnfollowResponse extends Response {
     }
 
     public Boolean getUnfollowed() {
+        if (unfollowed == null) {
+            return !isSuccess();
+        }
         return unfollowed;
+    }
+
+    public void setUnfollowed(Boolean unfollowed) {
+        this.unfollowed = unfollowed;
     }
 }

@@ -1,6 +1,7 @@
 package edu.byu.cs.tweeter.view.main.statusFragments;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,13 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.text.Html;
 import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
-import android.text.style.URLSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +27,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import byu.cs.cs340.model.domain.Status;
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.SearchUserRequest;
+import byu.cs.cs340.model.services.request.StatusRequest;
+import byu.cs.cs340.model.services.response.SearchUserResponse;
+import byu.cs.cs340.model.services.response.StatusResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.domain.Status;
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.request.StatusRequest;
-import edu.byu.cs.tweeter.net.response.SearchUserResponse;
-import edu.byu.cs.tweeter.net.response.StatusResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.GetAllStatusTask;
@@ -102,7 +100,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
             userAlias.setText(status.getAlias());
             userName.setText(status.getName());
             content.setText(status.getContent());
-            timestamp.setText(timeFormat(status.getTimestamp()));
+            timestamp.setText(status.getTimestamp());
 
             final String message = status.getContent();
             SpannableString spannableString = new SpannableString(message);
@@ -125,7 +123,8 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
                     ClickableSpan clickableSpan = new ClickableSpan() {
                         @Override
                         public void onClick(@NonNull View widget) {
-                            Toast.makeText(getContext(),"clicked" + message.substring(sIndex + PADDING, PADDING + sIndex + eIndex), Toast.LENGTH_LONG).show();
+                            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + message.substring(PADDING + sIndex, PADDING + sIndex + eIndex)));
+                            startActivity(browserIntent);
                         }
                     };
                     spannableString.setSpan(clickableSpan, PADDING + sIndex,  PADDING + sIndex + eIndex, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -152,7 +151,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
                         @Override
                         public void onClick(@NonNull View widget) {
                             SearchUserTask searchUserTask = new SearchUserTask(loginPresenter, observer);
-                            searchUserTask.execute(message.substring(0, eIndex));
+                            searchUserTask.execute(new SearchUserRequest(message.substring(0, eIndex)));
                         }
                     };
                     spannableString.setSpan(clickableSpan, PADDING + sIndex,  PADDING + sIndex + eIndex, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -173,7 +172,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
 
         @Override
         public void searchUserRetrieved(SearchUserResponse response) {
-            if (response.isSuccess()) {
+            if (response != null && response.isSuccess()) {
                 DataCache.getInstance().setSelectedUser(response.getUser());
                 getActivity().finish();
                 Intent intent = new Intent(getContext(), UserPageActivity.class);
@@ -190,7 +189,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
 
         private final List<Status> statuses = new ArrayList<>();
 
-        private edu.byu.cs.tweeter.model.domain.Status lastStatus;
+        private Status lastStatus;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -265,18 +264,23 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
 
         @Override
         public void statusesRetrieved(StatusResponse statusResponse) {
-            List<Status> statuses = statusResponse.getStatuses();
+            if (statusResponse != null) {
+                List<Status> statuses = statusResponse.getStatuses();
 
-            lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() -1) : null;
-            hasMorePages = statusResponse.hasMorePages();
+                lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() - 1) : null;
+                hasMorePages = statusResponse.getHasMorePages();
 
-            isLoading = false;
-            removeLoadingFooter();
-            statusRecyclerViewAdapter.addItems(statuses);
+                isLoading = false;
+                removeLoadingFooter();
+                statusRecyclerViewAdapter.addItems(statuses);
+            }
+            else {
+                Toast.makeText(getContext(), "feed not retrieved", Toast.LENGTH_SHORT).show();
+            }
         }
 
         private void addLoadingFooter() {
-            addItem(new Status(new User("Dummy", "User", "",""),"haha",new Timestamp(System.currentTimeMillis())));
+            addItem(new Status(new User("Dummy", "User", "",""),"haha",new Timestamp(System.currentTimeMillis()).toString()));
         }
 
         private void removeLoadingFooter() {

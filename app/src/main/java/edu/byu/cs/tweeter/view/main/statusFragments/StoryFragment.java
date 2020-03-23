@@ -28,12 +28,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import byu.cs.cs340.model.domain.Status;
+import byu.cs.cs340.model.domain.User;
+import byu.cs.cs340.model.services.request.SearchUserRequest;
+import byu.cs.cs340.model.services.request.StatusRequest;
+import byu.cs.cs340.model.services.response.SearchUserResponse;
+import byu.cs.cs340.model.services.response.StatusResponse;
 import edu.byu.cs.tweeter.R;
-import edu.byu.cs.tweeter.model.domain.Status;
-import edu.byu.cs.tweeter.model.domain.User;
-import edu.byu.cs.tweeter.net.request.StatusRequest;
-import edu.byu.cs.tweeter.net.response.SearchUserResponse;
-import edu.byu.cs.tweeter.net.response.StatusResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 import edu.byu.cs.tweeter.presenter.StatusPresenter;
 import edu.byu.cs.tweeter.view.asyncTasks.GetPersonalStatusTask;
@@ -100,7 +101,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
             userAlias.setText(status.getAlias());
             userName.setText(status.getName());
             content.setText(status.getContent());
-            timestamp.setText(timeFormat(status.getTimestamp()));
+            timestamp.setText(status.getTimestamp());
 
             final String message = status.getContent();
             SpannableString spannableString = new SpannableString(message);
@@ -151,7 +152,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
                         @Override
                         public void onClick(@NonNull View widget) {
                             SearchUserTask searchUserTask = new SearchUserTask(loginPresenter, observer);
-                            searchUserTask.execute(message.substring(0, eIndex));
+                            searchUserTask.execute(new SearchUserRequest(message.substring(0, eIndex)));
                         }
                     };
                     spannableString.setSpan(clickableSpan, PADDING + sIndex,  PADDING + sIndex + eIndex, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -176,7 +177,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
 
         @Override
         public void searchUserRetrieved(SearchUserResponse response) {
-            if (response.isSuccess()) {
+            if (response != null && response.isSuccess()) {
                 DataCache.getInstance().setSelectedUser(response.getUser());
                 getActivity().finish();
                 Intent intent = new Intent(getContext(), UserPageActivity.class);
@@ -192,7 +193,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
 
         private final List<Status> statuses = new ArrayList<>();
 
-        private edu.byu.cs.tweeter.model.domain.Status lastStatus;
+        private Status lastStatus;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -275,7 +276,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
             List<Status> statuses = statusResponse.getStatuses();
 
             lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() -1) : null;
-            hasMorePages = statusResponse.hasMorePages();
+            hasMorePages = statusResponse.getHasMorePages();
 
             isLoading = false;
             removeLoadingFooter();
@@ -283,7 +284,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
         }
 
         private void addLoadingFooter() {
-            addItem(new Status(new User("Dummy", "User", "",""),"haha",new Timestamp(System.currentTimeMillis())));
+            addItem(new Status(new User("Dummy", "User", "",""),"haha",new Timestamp(System.currentTimeMillis()).toString()));
         }
 
         private void removeLoadingFooter() {

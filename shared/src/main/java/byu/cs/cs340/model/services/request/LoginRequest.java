@@ -4,7 +4,9 @@ public class LoginRequest {
     private String firstName;
     private String lastName;
 
-    public  LoginRequest(String firstName, String lastName) {
+    public LoginRequest() {}
+
+    public LoginRequest(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -13,7 +15,15 @@ public class LoginRequest {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getPassword() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

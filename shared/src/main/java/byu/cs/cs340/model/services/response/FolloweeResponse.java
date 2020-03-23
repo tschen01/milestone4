@@ -8,8 +8,8 @@ import byu.cs.cs340.model.domain.User;
 public class FolloweeResponse extends PagedResponse {
     private List<User> followers;
 
-    public FolloweeResponse(boolean success) {
-        super(false,false);
+    public FolloweeResponse(String message) {
+        super(false,message,false);
     }
 
     public FolloweeResponse(List<User> followers, boolean hasMorePages) {
@@ -21,4 +21,7 @@ public class FolloweeResponse extends PagedResponse {
         return followers;
     }
 
+    public void setFollowers(List<User> followers) {
+        this.followers = followers;
+    }
 }

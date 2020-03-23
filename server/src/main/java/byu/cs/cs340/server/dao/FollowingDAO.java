@@ -36,6 +36,10 @@ public class FollowingDAO {
 
         List<User> allFollowees = followeesByFollower.get(request.getFollower());
         List<User> responseFollowees = new ArrayList<>(request.getLimit());
+        if (request.getLastFollowee() != null &&
+                !allFollowees.contains(request.getLastFollowee())) {
+            return new FollowingResponse("no such user");
+        }
 
         boolean hasMorePages = false;
 
@@ -114,7 +118,7 @@ public class FollowingDAO {
      *
      * @return the generator.
      */
-    FollowGenerator getFollowGenerator() {
+    public FollowGenerator getFollowGenerator() {
         return FollowGenerator.getInstance();
     }
 }

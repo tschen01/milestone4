@@ -13,6 +13,19 @@ public class SignUpHandler implements RequestHandler<SignUpRequest, SignUpRespon
     @Override
     public SignUpResponse handleRequest(SignUpRequest request, Context context) {
         SignUpServiceImp service = new SignUpServiceImp();
-        return service.signUp(request);
+        SignUpResponse response = service.signUp(request);
+        if (response == null) {
+            throw new RuntimeException("[400Error]");
+        }
+        if (response.isSuccess()) {
+            return response;
+        }
+        if (!response.isSuccess()) {
+            throw new RuntimeException("[400Error]");
+        }
+        else {
+            throw new RuntimeException("[500Error]");
+        }
+
     }
 }

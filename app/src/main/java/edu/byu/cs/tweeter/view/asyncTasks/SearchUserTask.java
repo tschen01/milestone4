@@ -2,10 +2,13 @@ package edu.byu.cs.tweeter.view.asyncTasks;
 
 import android.os.AsyncTask;
 
+import java.io.IOException;
+
+import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
 import edu.byu.cs.tweeter.presenter.LoginPresenter;
 
-public class SearchUserTask extends AsyncTask<String, Void, SearchUserResponse> {
+public class SearchUserTask extends AsyncTask<SearchUserRequest, Void, SearchUserResponse> {
 
     private final LoginPresenter presenter;
     private final SearchUserObserver observer;
@@ -21,8 +24,13 @@ public class SearchUserTask extends AsyncTask<String, Void, SearchUserResponse> 
     }
 
     @Override
-    protected SearchUserResponse doInBackground(String... requests) {
-        SearchUserResponse response = presenter.searchUser(requests[0]);
+    protected SearchUserResponse doInBackground(SearchUserRequest... requests) {
+        SearchUserResponse response = null;
+        try {
+            response = presenter.searchUser(requests[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return response;
     }
 

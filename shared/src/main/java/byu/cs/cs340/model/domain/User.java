@@ -6,16 +6,18 @@ import java.util.Objects;
 
 public class User implements Comparable<User> {
 
-    private final String firstName;
-    private final String lastName;
-    private final String alias;
-    private final String imageUrl;
+    private String firstName;
+    private String lastName;
+    private String alias;
+    private String imageUrl;
 
-    public User(@NotNull String firstName, @NotNull String lastName, String imageURL) {
+    private User() {}
+
+    public User(String firstName, String lastName, String imageURL) {
         this(firstName, lastName, String.format("@%s%s", firstName, lastName), imageURL);
     }
 
-    public User(@NotNull String firstName, @NotNull String lastName, @NotNull String alias, String imageURL) {
+    public User(String firstName, String lastName, String alias, String imageURL) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.alias = alias;
@@ -26,8 +28,16 @@ public class User implements Comparable<User> {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getName() {
@@ -38,8 +48,16 @@ public class User implements Comparable<User> {
         return alias;
     }
 
+    public void setAlias(String alias) {
+        this.alias = alias;
+    }
+
     public String getImageUrl() {
         return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     @Override
@@ -55,7 +73,6 @@ public class User implements Comparable<User> {
         return Objects.hash(alias);
     }
 
-    @NotNull
     @Override
     public String toString() {
         return "User{" +

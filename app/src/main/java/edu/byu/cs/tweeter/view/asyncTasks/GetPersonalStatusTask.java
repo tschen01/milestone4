@@ -28,7 +28,12 @@ public class GetPersonalStatusTask extends AsyncTask<StatusRequest, Void, Status
 
     @Override
     protected StatusResponse doInBackground(StatusRequest... followingRequests) {
-        StatusResponse response = presenter.getPersonalStatuses(followingRequests[0]);
+        StatusResponse response = null;
+        try {
+            response = presenter.getPersonalStatuses(followingRequests[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         loadImages(response);
         return response;
     }

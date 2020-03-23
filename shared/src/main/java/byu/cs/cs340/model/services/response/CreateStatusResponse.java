@@ -18,4 +18,8 @@ public class CreateStatusResponse extends Response {
     public Status getStatus() {
         return status;
     }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
 }
