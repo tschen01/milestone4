@@ -6,6 +6,7 @@ import java.io.IOException;
 import byu.cs.cs340.model.domain.User;
 import byu.cs.cs340.model.services.LoginService;
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.LogoutRequest;
 import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
@@ -34,8 +35,9 @@ public class LoginServiceProxy implements LoginService {
     }
 
     @Override
-    public LogoutResponse logout() throws IOException {
-        return serverFacade.logout(URL_PATH_LOGOUT);
+    public LogoutResponse logout(LogoutRequest logoutRequest) throws IOException {
+        logoutRequest.setAuthkey(authToken);
+        return serverFacade.logout(logoutRequest, URL_PATH_LOGOUT);
     }
 
     public User getCurrentUser() {
@@ -46,10 +48,19 @@ public class LoginServiceProxy implements LoginService {
         this.currentUser = currentUser;
     }
 
+    public String getAuthToken() {
+        return authToken;
+    }
+
+    public void setAuthToken(String authToken) {
+        this.authToken = authToken;
+    }
+
     @Override
     public LoginResponse login(LoginRequest request) throws IOException {
         LoginResponse response = serverFacade.loginResponse(request, URL_PATH_LOGIN);
         this.currentUser = response.getUser();
+        this.authToken = response.getAuthkey();
         return response;
     }
 

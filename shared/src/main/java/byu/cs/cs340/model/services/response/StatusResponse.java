@@ -7,12 +7,12 @@ import byu.cs.cs340.model.domain.Status;
 public class StatusResponse extends PagedResponse {
     private List<Status> statuses;
 
-    public StatusResponse(Boolean success) {
-        super(success, false);
+    public StatusResponse(String message) {
+        super(false, message, false);
     }
 
-    public StatusResponse(List<Status> statuses, boolean hasMorePages) {
-        super(true, hasMorePages);
+    public StatusResponse(List<Status> statuses, boolean hasMorePages, String lastObj) {
+        super(true, hasMorePages, lastObj);
         this.statuses = statuses;
     }
 

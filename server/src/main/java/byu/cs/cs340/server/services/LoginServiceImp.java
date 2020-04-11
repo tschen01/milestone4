@@ -3,29 +3,30 @@ package byu.cs.cs340.server.services;
 
 import byu.cs.cs340.model.services.LoginService;
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.LogoutRequest;
 import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
-import byu.cs.cs340.server.dao.LoginDAO;
+import byu.cs.cs340.server.dao.UserDAO;
 
 public class LoginServiceImp implements LoginService {
 
     @Override
     public LoginResponse login(LoginRequest request) {
-        LoginDAO loginDAO = new LoginDAO();
-        return loginDAO.loginResponse(request);
+        UserDAO userDAO = new UserDAO();
+        return userDAO.loginResponse(request);
     }
 
     @Override
     public SearchUserResponse searchUser(SearchUserRequest alias) {
-        LoginDAO loginDAO = new LoginDAO();
-        return loginDAO.searchUser(alias);
+        UserDAO userDAO = new UserDAO();
+        return userDAO.searchUser(alias);
     }
 
     @Override
-    public LogoutResponse logout() {
-        LoginDAO loginDAO = new LoginDAO();
-        return loginDAO.logout();
+    public LogoutResponse logout(LogoutRequest request) {
+        UserDAO userDAO = new UserDAO();
+        return userDAO.logout(request);
     }
 }

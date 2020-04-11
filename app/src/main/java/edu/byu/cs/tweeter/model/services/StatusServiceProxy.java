@@ -19,17 +19,20 @@ public class StatusServiceProxy implements StatusService {
 
     @Override
     public StatusResponse getPersonalStatuses(StatusRequest request) throws IOException {
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
         StatusResponse response = serverFacade.getPersonalStatusResponse(request, URL_PATH_PSTATUS);
         return response;
     }
 
     @Override
     public StatusResponse getAllStatus(StatusRequest request) throws IOException {
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
         StatusResponse response = serverFacade.getAllStatusResponse(request, URL_PATH_ASTATUS);
         return response;
     }
     @Override
     public CreateStatusResponse createStatus(CreateStatusRequest request) throws IOException {
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
         return serverFacade.createStatus(request, URL_PATH_CSTATUS);
     }
 }

@@ -100,7 +100,7 @@ public class FollowingFragment extends Fragment implements FollowingPresenter.Vi
 
         private final List<User> users = new ArrayList<>();
 
-        private User lastFollowee;
+        private String lastFollowee;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -183,7 +183,7 @@ public class FollowingFragment extends Fragment implements FollowingPresenter.Vi
             if (followingResponse != null) {
                 List<User> followees = followingResponse.getFollowees();
 
-                lastFollowee = (followees.size() > 0) ? followees.get(followees.size() - 1) : null;
+                lastFollowee = (followees.size() > 0) ? followees.get(followees.size() - 1).getAlias() : null;
                 hasMorePages = followingResponse.getHasMorePages();
 
                 isLoading = false;

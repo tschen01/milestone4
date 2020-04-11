@@ -12,8 +12,8 @@ public class FolloweeResponse extends PagedResponse {
         super(false,message,false);
     }
 
-    public FolloweeResponse(List<User> followers, boolean hasMorePages) {
-        super(true, hasMorePages);
+    public FolloweeResponse(List<User> followers, boolean hasMorePages, String lastObj) {
+        super(true, hasMorePages, lastObj);
         this.followers = followers;
     }
 

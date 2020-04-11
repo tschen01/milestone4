@@ -17,6 +17,7 @@ public class SignUpServiceProxy implements SignUpService {
     public SignUpResponse signUp(SignUpRequest request) throws IOException {
         SignUpResponse response = serverFacade.signUpResponse(request, URL_PATH);
         LoginServiceProxy.getInstance().setCurrentUser(response.getUser());
+        LoginServiceProxy.getInstance().setAuthToken(response.getAuthkey());
         return response;
     }
 }

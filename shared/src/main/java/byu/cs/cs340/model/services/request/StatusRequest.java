@@ -3,14 +3,14 @@ package byu.cs.cs340.model.services.request;
 import byu.cs.cs340.model.domain.Status;
 import byu.cs.cs340.model.domain.User;
 
-public class StatusRequest {
+public class StatusRequest extends Request {
     private User user;
     private int limit;
-    private Status lastStatus;
+    private String lastStatus;
 
     public StatusRequest() {}
 
-    public StatusRequest(User user, int limit, Status lastStatus) {
+    public StatusRequest(User user, int limit, String lastStatus) {
         this.user = user;
         this.limit = limit;
         this.lastStatus = lastStatus;
@@ -32,11 +32,11 @@ public class StatusRequest {
         this.limit = limit;
     }
 
-    public Status getLastStatus() {
+    public String getLastStatus() {
         return lastStatus;
     }
 
-    public void setLastStatus(Status lastStatus) {
+    public void setLastStatus(String lastStatus) {
         this.lastStatus = lastStatus;
     }
 }

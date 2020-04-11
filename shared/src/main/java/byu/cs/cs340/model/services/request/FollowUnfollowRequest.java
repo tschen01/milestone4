@@ -3,7 +3,7 @@ package byu.cs.cs340.model.services.request;
 
 import byu.cs.cs340.model.domain.Follow;
 
-public class FollowUnfollowRequest {
+public class FollowUnfollowRequest extends Request {
 
     Follow follow;
 

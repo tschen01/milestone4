@@ -31,10 +31,10 @@ public class GetAllStatusTask extends AsyncTask<StatusRequest, Void, StatusRespo
         StatusResponse response = null;
         try {
             response = presenter.getAllStatuses(followingRequests[0]);
+            loadImages(response);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        loadImages(response);
         return response;
     }
 

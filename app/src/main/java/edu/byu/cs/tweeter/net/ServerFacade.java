@@ -1,14 +1,18 @@
 package edu.byu.cs.tweeter.net;
 
-import java.io.IOException;
+import android.preference.PreferenceActivity;
 
-import byu.cs.cs340.model.domain.User;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import byu.cs.cs340.model.services.request.CreateStatusRequest;
 import byu.cs.cs340.model.services.request.FollowUnfollowRequest;
 import byu.cs.cs340.model.services.request.FolloweeRequest;
 import byu.cs.cs340.model.services.request.FollowingRequest;
 import byu.cs.cs340.model.services.request.IfFollowingRequest;
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.LogoutRequest;
 import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.request.SignUpRequest;
 import byu.cs.cs340.model.services.request.StatusRequest;
@@ -22,6 +26,7 @@ import byu.cs.cs340.model.services.response.LogoutResponse;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
 import byu.cs.cs340.model.services.response.SignUpResponse;
 import byu.cs.cs340.model.services.response.StatusResponse;
+import edu.byu.cs.tweeter.model.services.LoginServiceProxy;
 
 public class ServerFacade {
     // TODO: Set this the the invoke URL of your API. Find it by going to your API in AWS, clicking
@@ -62,7 +67,9 @@ public class ServerFacade {
 
     public CreateStatusResponse createStatus(CreateStatusRequest request, String urlPath) throws IOException {
         ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
-        return clientCommunicator.doPost(urlPath, request, null, CreateStatusResponse.class);
+        Map<String, String> header = new HashMap<>();
+        header.put("Authorization", LoginServiceProxy.getInstance().getAuthToken());
+        return clientCommunicator.doPost(urlPath, request, header, CreateStatusResponse.class);
     }
 
     public FollowUnfollowResponse followUnfollow(FollowUnfollowRequest request, String urlPath) throws IOException {
@@ -80,8 +87,8 @@ public class ServerFacade {
         return clientCommunicator.doPost(urlPath, request, null, SearchUserResponse.class);
     }
 
-    public LogoutResponse logout(String urlPath) throws IOException {
+    public LogoutResponse logout(LogoutRequest request, String urlPath) throws IOException {
         ClientCommunicator clientCommunicator = new ClientCommunicator(SERVER_URL);
-        return clientCommunicator.doPost(urlPath, null, null, LogoutResponse.class);
+        return clientCommunicator.doPost(urlPath, request, null, LogoutResponse.class);
     }
 }

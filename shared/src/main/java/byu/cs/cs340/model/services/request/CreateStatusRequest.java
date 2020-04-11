@@ -4,12 +4,12 @@ import java.sql.Timestamp;
 
 import byu.cs.cs340.model.domain.User;
 
-public class CreateStatusRequest {
+public class CreateStatusRequest extends Request {
     private User user;
     private String message;
     private String timestamp;
 
-    public CreateStatusRequest(){}
+    public CreateStatusRequest(){ }
 
     public  CreateStatusRequest(User user, String message, String timestamp) {
         this.user = user;

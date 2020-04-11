@@ -22,16 +22,21 @@ public class FollowingServiceProxy implements FollowingService {
     private static final String URL_PATH_FOLLOW = "/follow";
 
     private final ServerFacade serverFacade = new ServerFacade();
+    private String lastFollowee;
+    private String lastFollower;
 
     @Override
     public FollowingResponse getFollowees(FollowingRequest request) throws IOException {
-        return serverFacade.getFollowees(request, URL_PATH_FOLLOWING);
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
+        FollowingResponse response = serverFacade.getFollowees(request, URL_PATH_FOLLOWING);
+        lastFollowee = response.getLastObject();
+        return response;
     }
 
     @Override
     public FollowUnfollowResponse followUnfollow(FollowUnfollowRequest request) throws IOException {
-        FollowUnfollowResponse response = serverFacade.followUnfollow(request, URL_PATH_FOLLOWUNFOLLOW);
-        return response;
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
+        return serverFacade.followUnfollow(request, URL_PATH_FOLLOWUNFOLLOW);
     }
 
     @Override
@@ -41,6 +46,9 @@ public class FollowingServiceProxy implements FollowingService {
 
     @Override
     public FolloweeResponse getFollowers(FolloweeRequest request) throws IOException {
-        return serverFacade.getFollowers(request, URL_PATH_FOLLOWER);
+        request.setAuthkey(LoginServiceProxy.getInstance().getAuthToken());
+        FolloweeResponse response = serverFacade.getFollowers(request, URL_PATH_FOLLOWER);
+        lastFollowee = response.getLastObject();
+        return response;
     }
 }

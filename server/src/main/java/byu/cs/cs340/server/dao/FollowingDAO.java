@@ -1,124 +1,195 @@
 package byu.cs.cs340.server.dao;
 
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.amazonaws.services.dynamodbv2.document.DynamoDB;
+import com.amazonaws.services.dynamodbv2.document.Item;
+import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.model.AttributeDefinition;
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
+import com.amazonaws.services.dynamodbv2.model.CreateTableRequest;
+import com.amazonaws.services.dynamodbv2.model.KeySchemaElement;
+import com.amazonaws.services.dynamodbv2.model.KeyType;
+import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
+import com.amazonaws.services.dynamodbv2.model.QueryRequest;
+import com.amazonaws.services.dynamodbv2.model.QueryResult;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import byu.cs.cs340.model.domain.Follow;
 import byu.cs.cs340.model.domain.User;
-import byu.cs.cs340.model.services.request.FolloweeRequest;
 import byu.cs.cs340.model.services.request.FollowingRequest;
-import byu.cs.cs340.model.services.response.FolloweeResponse;
+import byu.cs.cs340.model.services.request.IfFollowingRequest;
 import byu.cs.cs340.model.services.response.FollowingResponse;
+import byu.cs.cs340.model.services.response.IfFollowingResponse;
 
 public class FollowingDAO {
-    private static Map<User, List<User>> followeesByFollower;
+    private static final String TableName = "followings";
 
-    /**
-     * Gets the users from the database that the user specified in the request is following. Uses
-     * information in the request object to limit the number of followees returned and to return the
-     * next set of followees after any that were returned in a previous request. The current
-     * implementation returns generated data and doesn't actually access a database.
-     *
-     * @param request contains information about the user whose followees are to be returned and any
-     *                other information required to satisfy the request.
-     * @return the followees.
-     */
+    private static final String HandleAttr = "follower_handle";
+    private static final String FolloweeHandleAttr = "followee_handle";
+    private static final String FolloweeNameAttr = "followee_name";
+    private static final String ImageAttr = "image_url";
+
+    // DynamoDB client
+    private static AmazonDynamoDB amazonDynamoDB = AmazonDynamoDBClientBuilder
+            .standard()
+            .withRegion("us-west-2")
+            .build();
+    private static DynamoDB dynamoDB = new DynamoDB(amazonDynamoDB);
+
+    private static boolean isNonEmptyString(String value) {
+        return (value != null && value.length() > 0);
+    }
+
+    public void createTable() {
+        try {
+            // Attribute definitions
+            ArrayList<AttributeDefinition> tableAttributeDefinitions = new ArrayList<>();
+
+            tableAttributeDefinitions.add(new AttributeDefinition()
+                    .withAttributeName("follower_handle")
+                    .withAttributeType("S"));
+            tableAttributeDefinitions.add(new AttributeDefinition()
+                    .withAttributeName("followee_handle")
+                    .withAttributeType("S"));
+
+            // Table key schema
+            ArrayList<KeySchemaElement> tableKeySchema = new ArrayList<>();
+            tableKeySchema.add(new KeySchemaElement()
+                    .withAttributeName("follower_handle")
+                    .withKeyType(KeyType.HASH));  //Partition key
+            tableKeySchema.add(new KeySchemaElement()
+                    .withAttributeName("followee_handle")
+                    .withKeyType(KeyType.RANGE));  //Sort key
+
+            CreateTableRequest createTableRequest = new CreateTableRequest()
+                    .withTableName("visits")
+                    .withProvisionedThroughput(new ProvisionedThroughput()
+                            .withReadCapacityUnits((long) 1)
+                            .withWriteCapacityUnits((long) 1))
+                    .withAttributeDefinitions(tableAttributeDefinitions)
+                    .withKeySchema(tableKeySchema);
+
+            Table table = dynamoDB.createTable(createTableRequest);
+            table.waitForActive();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteTable() {
+        try {
+            Table table = dynamoDB.getTable(TableName);
+            if (table != null) {
+                table.delete();
+                table.waitForDelete();
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean isFollowing(String follower_handle, String followee_handle) {
+        Table table = dynamoDB.getTable(TableName);
+        Item item = table.getItem(HandleAttr, follower_handle,  FolloweeHandleAttr, followee_handle);
+        if (item == null) {
+            return false;
+        }
+        return true;
+    }
+
+    public void deleteFollowing(String follower_handle, String followee_handle) {
+        Table table = dynamoDB.getTable(TableName);
+        table.deleteItem(HandleAttr, follower_handle, FolloweeHandleAttr, followee_handle);
+    }
+
     public FollowingResponse getFollowees(FollowingRequest request) {
+        String handle = request.getFollower().getAlias();
+        int pageSize = request.getLimit();
+        String lastFollower = request.getLastFollowee();
+        List<User> users = new ArrayList<>();
+        boolean more = false;
 
-        assert request.getLimit() > 0;
-        assert request.getFollower() != null;
+        Map<String, String> attrNames = new HashMap<>();
+        attrNames.put("#fol", HandleAttr);
 
-        if(followeesByFollower == null) {
-            followeesByFollower = initializeFollowees();
+        Map<String, AttributeValue> attrValues = new HashMap<>();
+        attrValues.put(":follower_handle", new AttributeValue().withS(handle));
+
+        QueryRequest queryRequest = new QueryRequest()
+                .withTableName(TableName)
+                .withKeyConditionExpression("#fol = :follower_handle")
+                .withExpressionAttributeNames(attrNames)
+                .withExpressionAttributeValues(attrValues)
+                .withLimit(pageSize);
+
+        if (isNonEmptyString(lastFollower)) {
+            Map<String, AttributeValue> startKey = new HashMap<>();
+            startKey.put(HandleAttr, new AttributeValue().withS(handle));
+            startKey.put(FolloweeHandleAttr, new AttributeValue().withS(lastFollower));
+
+            queryRequest = queryRequest.withExclusiveStartKey(startKey);
         }
 
-        List<User> allFollowees = followeesByFollower.get(request.getFollower());
-        List<User> responseFollowees = new ArrayList<>(request.getLimit());
-        if (request.getLastFollowee() != null &&
-                !allFollowees.contains(request.getLastFollowee())) {
-            return new FollowingResponse("no such user");
-        }
-
-        boolean hasMorePages = false;
-
-        if(request.getLimit() > 0) {
-            if (allFollowees != null) {
-                int followeesIndex = getFolloweesStartingIndex(request.getLastFollowee(), allFollowees);
-
-                for(int limitCounter = 0; followeesIndex < allFollowees.size() && limitCounter < request.getLimit(); followeesIndex++, limitCounter++) {
-                    responseFollowees.add(allFollowees.get(followeesIndex));
-                }
-
-                hasMorePages = followeesIndex < allFollowees.size();
+        QueryResult queryResult = amazonDynamoDB.query(queryRequest);
+        List<Map<String, AttributeValue>> items = queryResult.getItems();
+        if (items != null) {
+            for (Map<String, AttributeValue> item : items){
+                String followerHandle = item.get(FolloweeHandleAttr).getS();
+                String name = item.get(FolloweeNameAttr).getS();
+                String image = item.get(ImageAttr).getS();
+                users.add(getItemUser(name,image,followerHandle));
             }
         }
 
-        return new FollowingResponse(responseFollowees, hasMorePages);
-    }
-
-    /**
-     * Generates the followee data.
-     */
-    private Map<User, List<User>> initializeFollowees() {
-
-        Map<User, List<User>> followeesByFollower = new HashMap<>();
-
-        List<Follow> follows = getFollowGenerator().generateUsersAndFollows(20,
-                5, FollowGenerator.Sort.FOLLOWER_FOLLOWEE);
-
-        // Populate a map of followees, keyed by follower so we can easily handle followee requests
-        for(Follow follow : follows) {
-            List<User> followees = followeesByFollower.get(follow.getFollower());
-
-            if(followees == null) {
-                followees = new ArrayList<>();
-                followeesByFollower.put(follow.getFollower(), followees);
-            }
-
-            followees.add(follow.getFollowee());
+        Map<String, AttributeValue> lastKey = queryResult.getLastEvaluatedKey();
+        if (lastKey != null) {
+            lastFollower = lastKey.get(FolloweeHandleAttr).getS();
+            more = true;
         }
 
-        return followeesByFollower;
+        return new FollowingResponse(users, more, lastFollower);
     }
 
-    /**
-     * Determines the index for the first followee in the specified 'allFollowees' list that should
-     * be returned in the current request. This will be the index of the next followee after the
-     * specified 'lastFollowee'.
-     *
-     * @param lastFollowee the last followee that was returned in the previous request or null if
-     *                     there was no previous request.
-     * @param allFollowees the generated list of followees from which we are returning paged results.
-     * @return the index of the first followee to be returned.
-     */
-    private int getFolloweesStartingIndex(User lastFollowee, List<User> allFollowees) {
+    private User getItemUser(String name, String imageURL, String alias) {
+        String[] names = name.split(" ");
+        String firstName = names[0];
+        String lastName = names[1];
 
-        int followeesIndex = 0;
+        return new User(firstName, lastName, alias, imageURL);
+    }
 
-        if(lastFollowee != null) {
-            // This is a paged request for something after the first page. Find the first item
-            // we should return
-            for (int i = 0; i < allFollowees.size(); i++) {
-                if(lastFollowee.equals(allFollowees.get(i))) {
-                    // We found the index of the last item returned last time. Increment to get
-                    // to the first one we should return
-                    followeesIndex = i + 1;
-                }
-            }
+    public IfFollowingResponse following(IfFollowingRequest request) {
+        boolean result;
+        try {
+            result = isFollowing(request.getFollower_alias(), request.getFollowee_alias());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new IfFollowingResponse(false);
         }
-
-        return followeesIndex;
+        return new IfFollowingResponse(true,result);
     }
 
-    /**
-     * Returns an instance of FollowGenerator that can be used to generate Follow data. This is
-     * written as a separate method to allow mocking of the generator.
-     *
-     * @return the generator.
-     */
-    public FollowGenerator getFollowGenerator() {
-        return FollowGenerator.getInstance();
+    public void addFollowing(String follower_handle, String name, String imageURL, String alias) {
+        Table table = dynamoDB.getTable(TableName);
+
+        try {
+            Item item = new Item()
+                    .withPrimaryKey(HandleAttr, follower_handle, FolloweeHandleAttr, alias)
+                    .with(FolloweeNameAttr, name)
+                    .with(ImageAttr, imageURL);
+
+            table.putItem(item);
+        }
+        catch (Exception e) {
+            // Record first visit of visitor to location
+            e.printStackTrace();
+        }
     }
+
 }

@@ -32,10 +32,11 @@ public class GetFollowingTask extends AsyncTask<FollowingRequest, Void, Followin
         FollowingResponse response = null;
         try {
             response = presenter.getFollowing(followingRequests[0]);
+            loadImages(response);
         } catch (Exception e) {
+            System.out.println("ERROR!!!!! " + e.getMessage());
             e.printStackTrace();
         }
-        loadImages(response);
         return response;
     }
 

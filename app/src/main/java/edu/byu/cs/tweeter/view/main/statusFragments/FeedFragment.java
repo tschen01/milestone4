@@ -189,7 +189,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
 
         private final List<Status> statuses = new ArrayList<>();
 
-        private Status lastStatus;
+        private String lastStatus;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -267,7 +267,7 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
             if (statusResponse != null) {
                 List<Status> statuses = statusResponse.getStatuses();
 
-                lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() - 1) : null;
+                lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() - 1).getTimestamp() : null;
                 hasMorePages = statusResponse.getHasMorePages();
 
                 isLoading = false;

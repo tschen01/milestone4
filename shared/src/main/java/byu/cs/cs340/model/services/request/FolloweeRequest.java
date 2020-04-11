@@ -2,20 +2,20 @@ package byu.cs.cs340.model.services.request;
 
 import byu.cs.cs340.model.domain.User;
 
-public class FolloweeRequest {
+public class FolloweeRequest extends Request {
     private User followee;
     private int limit;
-    private User lastFollower;
+    private String lastFollower;
 
     public FolloweeRequest() {}
 
-    public FolloweeRequest(User follower, int limit, User lastFollowee) {
+    public FolloweeRequest(User follower, int limit, String lastFollowee) {
         this.followee = follower;
         this.limit = limit;
         this.lastFollower = lastFollowee;
     }
 
-    public Object getFollowee() {
+    public User getFollowee() {
         return followee;
     }
 
@@ -31,11 +31,11 @@ public class FolloweeRequest {
         this.limit = limit;
     }
 
-    public User getLastFollower() {
+    public String getLastFollower() {
         return lastFollower;
     }
 
-    public void setLastFollower(User lastFollower) {
+    public void setLastFollower(String lastFollower) {
         this.lastFollower = lastFollower;
     }
 }

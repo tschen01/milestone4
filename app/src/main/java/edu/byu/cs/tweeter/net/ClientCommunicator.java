@@ -12,7 +12,7 @@ import java.util.Map;
 import edu.byu.cs.tweeter.json.Serializer;
 
 public class ClientCommunicator {
-    private static final int TIMEOUT_MILLIS = 10000;
+    private static final int TIMEOUT_MILLIS = 100000;
 
     private final String baseURL;
 
@@ -72,12 +72,6 @@ public class ClientCommunicator {
             connection = (HttpURLConnection) url.openConnection();
             connection.setReadTimeout(TIMEOUT_MILLIS);
             requestStrategy.setRequestMethod(connection);
-
-            if(headers != null) {
-                for (String headerKey : headers.keySet()) {
-                    connection.setRequestProperty(headerKey, headers.get(headerKey));
-                }
-            }
 
             requestStrategy.sendRequest(connection);
 

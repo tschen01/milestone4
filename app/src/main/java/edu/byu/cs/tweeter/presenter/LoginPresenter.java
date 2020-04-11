@@ -3,6 +3,7 @@ package edu.byu.cs.tweeter.presenter;
 import java.io.IOException;
 
 import byu.cs.cs340.model.services.request.LoginRequest;
+import byu.cs.cs340.model.services.request.LogoutRequest;
 import byu.cs.cs340.model.services.request.SearchUserRequest;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
@@ -27,7 +28,7 @@ public class LoginPresenter extends Presenter {
     }
 
     public LogoutResponse logout() throws IOException {
-        return LoginServiceProxy.getInstance().logout();
+        return LoginServiceProxy.getInstance().logout(new LogoutRequest());
     }
 
     public SearchUserResponse searchUser(SearchUserRequest alias) throws IOException {

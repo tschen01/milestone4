@@ -72,7 +72,7 @@ public class UserPageActivity extends AppCompatActivity implements LoadImageTask
         }
 
         SetFollowButtonTask setFollowButtonTask = new SetFollowButtonTask(followingPresenter, this);
-        setFollowButtonTask.execute(new IfFollowingRequest(user));
+        setFollowButtonTask.execute(new IfFollowingRequest( presenter.getCurrentUser().getAlias(), user.getAlias()));
 
         // Asynchronously load the user's image
         LoadImageTask loadImageTask = new LoadImageTask(this);
@@ -127,7 +127,7 @@ public class UserPageActivity extends AppCompatActivity implements LoadImageTask
         if (response == null) {
             Toast.makeText(getBaseContext(), "error unfollowing", Toast.LENGTH_SHORT).show();
         }
-        else if (!response.isSuccess()) {
+        else if (!response.getFollowing()) {
             followButton.setText("follow");
             followButton.setBackgroundColor(getResources().getColor(R.color.colorAccent));
         }

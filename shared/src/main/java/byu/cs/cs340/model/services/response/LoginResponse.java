@@ -7,12 +7,15 @@ public class LoginResponse extends Response {
 
     private User user;
 
-    public  LoginResponse(boolean success) {
-        super(success);
+    private String authkey;
+
+    public  LoginResponse(boolean success, String message) {
+        super(success, message);
     }
-    public  LoginResponse(boolean success, User user) {
+    public  LoginResponse(boolean success, User user, String authkey) {
         super(success);
         this.user = user;
+        this.authkey = authkey;
     }
 
     public User getUser() {
@@ -21,5 +24,13 @@ public class LoginResponse extends Response {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getAuthkey() {
+        return authkey;
+    }
+
+    public void setAuthkey(String authkey) {
+        this.authkey = authkey;
     }
 }

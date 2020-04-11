@@ -193,7 +193,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
 
         private final List<Status> statuses = new ArrayList<>();
 
-        private Status lastStatus;
+        private String lastStatus;
 
         private boolean hasMorePages;
         private boolean isLoading = false;
@@ -275,7 +275,7 @@ public class StoryFragment extends Fragment implements StatusPresenter.View, Log
         public void statusesRetrieved(StatusResponse statusResponse) {
             List<Status> statuses = statusResponse.getStatuses();
 
-            lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() -1) : null;
+            lastStatus = (statuses.size() > 0) ? statuses.get(statuses.size() -1).getTimestamp() : null;
             hasMorePages = statusResponse.getHasMorePages();
 
             isLoading = false;

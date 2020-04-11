@@ -2,11 +2,11 @@ package byu.cs.cs340.model.services.request;
 
 import byu.cs.cs340.model.domain.User;
 
-public class FollowingRequest {
+public class FollowingRequest extends Request{
 
     private User follower;
     private int limit;
-    private User lastFollowee;
+    private String lastFollowee;
 
     /**
      * Allows construction of the object from Json. Private so it won't be called in normal code.
@@ -22,7 +22,7 @@ public class FollowingRequest {
      *                     there was no previous request or if no followees were returned in the
      *                     previous request).
      */
-    public FollowingRequest(User follower, int limit, User lastFollowee) {
+    public FollowingRequest(User follower, int limit, String lastFollowee) {
         this.follower = follower;
         this.limit = limit;
         this.lastFollowee = lastFollowee;
@@ -64,22 +64,11 @@ public class FollowingRequest {
         this.limit = limit;
     }
 
-    /**
-     * Returns the last followee that was returned in the previous request or null if there was no
-     * previous request or if no followees were returned in the previous request.
-     *
-     * @return the last followee.
-     */
-    public User getLastFollowee() {
+    public String getLastFollowee() {
         return lastFollowee;
     }
 
-    /**
-     * Sets the last followee.
-     *
-     * @param lastFollowee the last followee.
-     */
-    public void setLastFollowee(User lastFollowee) {
+    public void setLastFollowee(String lastFollowee) {
         this.lastFollowee = lastFollowee;
     }
 }
