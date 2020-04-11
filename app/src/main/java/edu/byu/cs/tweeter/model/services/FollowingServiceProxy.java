@@ -16,10 +16,10 @@ import byu.cs.cs340.model.services.response.IfFollowingResponse;
 import edu.byu.cs.tweeter.net.ServerFacade;
 
 public class FollowingServiceProxy implements FollowingService {
-    private static final String URL_PATH_FOLLOWING = "/getfollowing";
-    private static final String URL_PATH_FOLLOWER = "/getfollower";
-    private static final String URL_PATH_FOLLOWUNFOLLOW = "/followunfollow";
-    private static final String URL_PATH_FOLLOW = "/follow";
+    private static final String URL_PATH_FOLLOWING = "/following";
+    private static final String URL_PATH_FOLLOWER = "/getfollowers";
+    private static final String URL_PATH_FOLLOWUNFOLLOW = "/followuser";
+    private static final String URL_PATH_FOLLOW = "/isfollowing";
 
     private final ServerFacade serverFacade = new ServerFacade();
     private String lastFollowee;

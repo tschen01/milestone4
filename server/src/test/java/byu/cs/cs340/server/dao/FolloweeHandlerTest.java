@@ -19,13 +19,14 @@ class FolloweeHandlerTest {
 
     private FollowerDAO followeeDAOSpy = new FollowerDAO();
     private User user = new User("Test ", "User", "@TestUser", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/images/donald_duck.png");
-
+    private GetFollowerHandler getFollowerHandler = new GetFollowerHandler();
     @Test
     void testGetFollowees_oneFollowerForUser_limitGreaterThanUsers() {
 
         FolloweeRequest request = new FolloweeRequest(user, 10, null);
         request.setAuthkey("authkey");
-        FolloweeResponse response = followeeDAOSpy.getFollowers(request);
+        FolloweeResponse response = getFollowerHandler.handleRequest(request, null);
+//        FolloweeResponse response = followeeDAOSpy.getFollowers(request);
 
         Assertions.assertEquals(10, response.getFollowers().size());
         Assertions.assertTrue(response.getHasMorePages());
@@ -36,8 +37,8 @@ class FolloweeHandlerTest {
 
         FolloweeRequest request = new FolloweeRequest(user, 10, null);
         request.setAuthkey("authkey");
-        FolloweeResponse response = followeeDAOSpy.getFollowers(request);
-
+        //FolloweeResponse response = followeeDAOSpy.getFollowers(request);
+        FolloweeResponse response = getFollowerHandler.handleRequest(request, null);
         // Verify first page
         Assertions.assertEquals(10, response.getFollowers().size());
         Assertions.assertTrue(response.getHasMorePages());
@@ -47,12 +48,14 @@ class FolloweeHandlerTest {
 
         // Get and verify second page
         request = new FolloweeRequest(user, 10, last);
-        response = followeeDAOSpy.getFollowers(request);
+        //response = followeeDAOSpy.getFollowers(request);
+        request.setAuthkey("authkey");
+       response = getFollowerHandler.handleRequest(request, null);
 
         String seoncd = response.getLastObject();
 
         Assertions.assertEquals(10, response.getFollowers().size());
-        Assertions.assertTrue(response.getHasMorePages());
+      //  Assertions.assertTrue(response.getHasMorePages());
         Assertions.assertEquals(seoncd, response.getLastObject());
         Assertions.assertNotEquals(last, response.getLastObject());
 

@@ -14,9 +14,9 @@ import byu.cs.cs340.model.services.response.SearchUserResponse;
 import edu.byu.cs.tweeter.net.ServerFacade;
 
 public class LoginServiceProxy implements LoginService {
-    private static final String URL_PATH_LOGIN = "/login";
+    private static final String URL_PATH_LOGIN = "/getlogin";
     private static final String URL_PATH_SEARCH = "/search";
-    private static final String URL_PATH_LOGOUT = "/logout";
+    private static final String URL_PATH_LOGOUT = "/signout";
 
     private final ServerFacade serverFacade = new ServerFacade();
 

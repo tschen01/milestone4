@@ -13,7 +13,7 @@ import edu.byu.cs.tweeter.net.ServerFacade;
 public class StatusServiceProxy implements StatusService {
     private static final String URL_PATH_PSTATUS = "/getstory";
     private static final String URL_PATH_ASTATUS = "/getfeed";
-    private static final String URL_PATH_CSTATUS = "/createstatus";
+    private static final String URL_PATH_CSTATUS = "/post";
 
     private final ServerFacade serverFacade = new ServerFacade();
 

@@ -20,19 +20,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -91,10 +91,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="52" selection-start-column="8" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="36" selection-start-column="8" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,82 +139,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-985">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="105" column="38" selection-start-line="105" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="105" column="55" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/SearchUserTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="181" column="13" lean-forward="true" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/CreateStatusActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/PageViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/SectionsPagerAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FollowUnfollowResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="872">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-49">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -233,13 +236,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FollowingResponse.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FolloweeResponse.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/LoginDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/PagedResponse.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/StatusResponse.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/StatusRequest.java" />
@@ -254,9 +254,7 @@
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowingRequest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FolloweeRequest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/Response.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ClientCommunicator.java" />
-        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFolloweeTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFollowingTask.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java" />
@@ -264,7 +262,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowerHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowUnfollowDAO.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/IfFollowingRequest.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java" />
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryHandlerTest.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java" />
@@ -284,14 +281,20 @@
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
-    <option name="y" value="20" />
-    <option name="width" value="1080" />
-    <option name="height" value="955" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="1635" />
+    <option name="height" value="1735" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -301,331 +304,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="asyncTasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="followingFragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="statusFragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-              <item name="following" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="lambda" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-              <item name="status" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="shared" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -648,7 +327,194 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+              <item name="presenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="following" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="status" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tweeter-copy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -747,7 +613,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server" />
-    <property name="last_opened_file_path" value="D:/AndroidStudioProjects/FamilyMap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CS-340-API" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -793,6 +659,38 @@
     </option>
   </component>
   <component name="RunManager" selected="Android App.app">
+    <configuration name="FolloweeHandlerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="byu.cs.cs340.server.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FolloweeHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FollowingHandlerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="byu.cs.cs340.server.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FollowingHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginHandlerTest.testSearchUser_fail" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="server" />
       <extension name="coverage">
@@ -821,39 +719,6 @@
       <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
       <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.LoginHandlerTest" />
       <option name="METHOD_NAME" value="testSearchUser_success" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpHandlerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="byu.cs.cs340.server.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.SignUpHandlerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpHandlerTest.testSignUp_sucess" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="byu.cs.cs340.server.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.SignUpHandlerTest" />
-      <option name="METHOD_NAME" value="testSignUp_sucess" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -941,11 +806,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.FollowingHandlerTest" />
+        <item itemvalue="Android JUnit.FolloweeHandlerTest" />
         <item itemvalue="Gradle.D:/assignments/BYU/Winter 2020/CS 340/milestone3/server [shadowJar]" />
         <item itemvalue="Android JUnit.LoginHandlerTest.testSearchUser_fail" />
         <item itemvalue="Android JUnit.LoginHandlerTest.testSearchUser_success" />
-        <item itemvalue="Android JUnit.SignUpHandlerTest" />
-        <item itemvalue="Android JUnit.SignUpHandlerTest.testSignUp_sucess" />
       </list>
     </recent_temporary>
   </component>
@@ -963,35 +828,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 06s.xml">
-      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 40m 11s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 35s.xml">
-      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 41m 56s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 50s.xml">
-      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 47m 35s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FeedHandlerTest_testGetFeed_userStatus - 2020.04.11 at 11h 22m 03s.xml">
-      <configuration name="FeedHandlerTest.testGetFeed_userStatus" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 48m 17s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="SignUpHandlerTest_testSignUp_sucess - 2020.04.11 at 11h 51m 30s.xml">
-      <configuration name="SignUpHandlerTest.testSignUp_sucess" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 49m 30s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="SignUpHandlerTest - 2020.04.11 at 11h 53m 18s.xml">
-      <configuration name="SignUpHandlerTest" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 54m 34s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 07m 45s.xml">
-      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 13h 55m 51s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 08m 20s.xml">
-      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 14h 01m 04s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 08m 56s.xml">
-      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
+    <history-entry file="FolloweeHandlerTest - 2020.04.11 at 14h 01m 18s.xml">
+      <configuration name="FolloweeHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="LoginHandlerTest_testSearchUser_fail - 2020.04.11 at 12h 09m 02s.xml">
-      <configuration name="LoginHandlerTest.testSearchUser_fail" configurationId="AndroidJUnit" />
+    <history-entry file="FollowingHandlerTest - 2020.04.11 at 14h 01m 23s.xml">
+      <configuration name="FollowingHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1004,11 +869,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.502439" side_tool="true" weight="0.19908814" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49756098" visible="true" weight="0.2080537" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49756098" visible="true" weight="0.28421053" />
       <window_info id="Structure" order="2" sideWeight="0.502439" side_tool="true" weight="0.19908814" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" sideWeight="0.502439" side_tool="true" weight="0.19908814" />
@@ -1016,19 +881,19 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32902735" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.7165654" visible="true" weight="0.2082153" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" sideWeight="0.7165654" visible="true" weight="0.1563055" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49772036" weight="0.6643059" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49924013" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6253799" weight="0.32577905" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6253799" weight="0.42273533" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4969605" weight="0.18271954" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.28343466" side_tool="true" weight="0.3846154" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4986577" weight="0.28470254" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.47796354" weight="0.28470254" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.47796354" weight="0.28419182" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" sideWeight="0.4966443" weight="0.3286119" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" weight="0.32684565" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.3263158" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" />
@@ -1099,28 +964,10 @@
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java</url>
           <line>49</line>
           <properties />
           <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java</url>
@@ -1208,70 +1055,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/CreateStatusHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetStoryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowUnfollowDAO.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" selection-start-line="14" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StatusGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2550">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/IfFollowingRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/IfFollowingResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1286,34 +1069,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
         </state>
       </provider>
     </entry>
@@ -1372,34 +1131,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="674" selection-start-line="674" selection-end-line="674" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" />
     <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -1431,16 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1275">
           <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1476,16 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1514,10 +1226,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="105" column="38" selection-start-line="105" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/SearchUserTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="181" column="13" lean-forward="true" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+        <state relative-caret-position="2533">
+          <caret line="181" column="13" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1549,41 +1292,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+        <state relative-caret-position="1037">
+          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/SignUpServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-985">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="1258">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/SearchUserTask.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" column="113" selection-start-line="33" selection-start-column="113" selection-end-line="33" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/SignUpHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="462" selection-start-line="462" selection-end-line="462" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1849">
+          <caret line="677" selection-start-line="677" selection-end-line="677" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FollowUnfollowResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="105" column="38" selection-start-line="105" selection-end-line="106" />
+        <state>
+          <caret column="36" selection-start-column="8" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="105" column="55" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
+        <state>
+          <caret column="52" selection-start-column="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

@@ -147,6 +147,9 @@ public class FollowerDAO {
             lastFollower = lastKey.get(FollowerHandleAttr).getS();
             more = true;
         }
+        else{
+            lastFollower = null;
+        }
 
         return new FolloweeResponse(users, more, lastFollower);
     }
