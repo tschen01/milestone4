@@ -10,34 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a5cbaa-6286-4a4c-a9bc-c264d481a758" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__aws_java_sdk_core_1_11_547.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__aws_java_sdk_dynamodb_1_11_547.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__aws_java_sdk_kms_1_11_547.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__aws_java_sdk_s3_1_11_547.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__httpclient_4_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__httpcore_4_4_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ion_java_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jackson_annotations_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jackson_core_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jackson_databind_2_6_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jackson_dataformat_cbor_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jmespath_java_1_11_547.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_2_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/AuthkeyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/AuthkeyDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/CreateStatusHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/LogoutRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -48,76 +20,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/SignUpServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/SignUpServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ClientCommunicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ClientCommunicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/presenter/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/presenter/LoginPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetAllStatusTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetAllStatusTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFolloweeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFolloweeTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFollowingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFollowingTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FollowingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FollowingFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowUnfollowDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/LoginDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StatusGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/following/FollowUnfollowHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/following/FollowingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/following/GetFollowerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/following/GetFollowingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowingHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/login/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/login/LogoutHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/LogoutHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/login/SearchUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/SearchUserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/login/SignUpHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/SignUpHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/status/CreateStatusHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/CreateStatusHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/status/GetFeedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetFeedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/status/GetStoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetStoryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/LoginServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/LoginServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/UserGeneratorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/CreateStatusDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/CreateStatusRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/CreateStatusRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowUnfollowRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowUnfollowRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FolloweeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FolloweeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowingRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/IfFollowingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/IfFollowingRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/StatusRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/StatusRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FolloweeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FolloweeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FollowingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FollowingResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/IfFollowingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/IfFollowingResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/LoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/PagedResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/PagedResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/SignUpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/SignUpResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/StatusResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/StatusResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,10 +91,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="497">
+              <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,88 +103,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-985">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/AuthkeyService.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowingHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/IfFollowingResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="105" column="38" selection-start-line="105" selection-end-line="106" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="185">
+              <caret line="105" column="55" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/SearchUserTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="181" column="13" lean-forward="true" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/CreateStatusActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/PageViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/SectionsPagerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -286,10 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserGen</find>
-      <find>action</find>
-      <find>floating</find>
-      <find>act</find>
       <find>ob</find>
       <find>signUp</find>
       <find>loginRe</find>
@@ -308,7 +213,6 @@
       <find>toas</find>
       <find>request</find>
       <find>ing</find>
-      <find>name</find>
       <find>mname</find>
       <find>mnames</find>
       <find>test</find>
@@ -316,6 +220,11 @@
       <find>retr</find>
       <find>User</find>
       <find>time</find>
+      <find>username</find>
+      <find>image_url</find>
+      <find>name</find>
+      <find>password</find>
+      <find>toast</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -324,9 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/LogoutRequest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/presenter/LoginPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/LoginServiceProxy.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java" />
@@ -337,11 +243,6 @@
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/PagedResponse.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/StatusResponse.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/StatusRequest.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" />
-        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FollowingFragment.java" />
@@ -350,7 +251,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetFeedHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetStoryHandler.java" />
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/AuthkeyDAOTest.java" />
-        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowingRequest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FolloweeRequest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/Response.java" />
@@ -365,16 +265,25 @@
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowUnfollowDAO.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/IfFollowingRequest.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java" />
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryHandlerTest.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/CreateStatusDAO.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowingHandlerTest.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/IfFollowingResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowingDAO.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/domain/Follow.java" />
         <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java" />
       </list>
     </option>
   </component>
@@ -475,6 +384,30 @@
               <item name="tweeter" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="followingFragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="milestone3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tweeter" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="statusFragments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tweeter" type="b2602c69:ProjectViewProjectNode" />
@@ -860,7 +793,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Android App.app">
-    <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginHandlerTest.testSearchUser_fail" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -869,15 +802,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FollowUnfollowHandlerTest" />
-      <option name="METHOD_NAME" value="ifIsFollowing" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.LoginHandlerTest" />
+      <option name="METHOD_NAME" value="testSearchUser_fail" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FolloweeHandlerTest.testGetFollowees_limitLessThanUsers_endsOnPageBoundary" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginHandlerTest.testSearchUser_success" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -886,15 +819,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FolloweeHandlerTest" />
-      <option name="METHOD_NAME" value="testGetFollowees_limitLessThanUsers_endsOnPageBoundary" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.LoginHandlerTest" />
+      <option name="METHOD_NAME" value="testSearchUser_success" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FollowingHandlerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpHandlerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -903,14 +836,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FollowingHandlerTest" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.SignUpHandlerTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpHandlerTest.testSignUp_sucess" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -919,8 +852,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="byu.cs.cs340.server.dao" />
-      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.FollowingHandlerTest" />
-      <option name="METHOD_NAME" value="testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" />
+      <option name="MAIN_CLASS_NAME" value="byu.cs.cs340.server.dao.SignUpHandlerTest" />
+      <option name="METHOD_NAME" value="testSignUp_sucess" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -1009,10 +942,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.D:/assignments/BYU/Winter 2020/CS 340/milestone3/server [shadowJar]" />
-        <item itemvalue="Android JUnit.FollowUnfollowHandlerTest.ifIsFollowing" />
-        <item itemvalue="Android JUnit.FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" />
-        <item itemvalue="Android JUnit.FolloweeHandlerTest.testGetFollowees_limitLessThanUsers_endsOnPageBoundary" />
-        <item itemvalue="Android JUnit.FollowingHandlerTest" />
+        <item itemvalue="Android JUnit.LoginHandlerTest.testSearchUser_fail" />
+        <item itemvalue="Android JUnit.LoginHandlerTest.testSearchUser_success" />
+        <item itemvalue="Android JUnit.SignUpHandlerTest" />
+        <item itemvalue="Android JUnit.SignUpHandlerTest.testSignUp_sucess" />
       </list>
     </recent_temporary>
   </component>
@@ -1030,35 +963,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FollowingHandlerTest_testGetFollowees_oneFollowerForUser_limitGreaterThanUsers - 2020.04.10 at 22h 37m 47s.xml">
-      <configuration name="FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" configurationId="AndroidJUnit" />
+    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 06s.xml">
+      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowingHandlerTest_testGetFollowees_oneFollowerForUser_limitGreaterThanUsers - 2020.04.10 at 22h 43m 10s.xml">
-      <configuration name="FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" configurationId="AndroidJUnit" />
+    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 35s.xml">
+      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowingHandlerTest_testGetFollowees_oneFollowerForUser_limitGreaterThanUsers - 2020.04.10 at 22h 43m 13s.xml">
-      <configuration name="FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" configurationId="AndroidJUnit" />
+    <history-entry file="FollowUnfollowHandlerTest_FollowUnfollow - 2020.04.11 at 11h 21m 50s.xml">
+      <configuration name="FollowUnfollowHandlerTest.FollowUnfollow" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FolloweeHandlerTest_testGetFollowees_limitLessThanUsers_endsOnPageBoundary - 2020.04.10 at 22h 52m 34s.xml">
-      <configuration name="FolloweeHandlerTest.testGetFollowees_limitLessThanUsers_endsOnPageBoundary" configurationId="AndroidJUnit" />
+    <history-entry file="FeedHandlerTest_testGetFeed_userStatus - 2020.04.11 at 11h 22m 03s.xml">
+      <configuration name="FeedHandlerTest.testGetFeed_userStatus" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowingHandlerTest_testGetFollowees_oneFollowerForUser_limitGreaterThanUsers - 2020.04.10 at 22h 52m 34s.xml">
-      <configuration name="FollowingHandlerTest.testGetFollowees_oneFollowerForUser_limitGreaterThanUsers" configurationId="AndroidJUnit" />
+    <history-entry file="SignUpHandlerTest_testSignUp_sucess - 2020.04.11 at 11h 51m 30s.xml">
+      <configuration name="SignUpHandlerTest.testSignUp_sucess" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_ifIsFollowing - 2020.04.11 at 01h 50m 30s.xml">
-      <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" configurationId="AndroidJUnit" />
+    <history-entry file="SignUpHandlerTest - 2020.04.11 at 11h 53m 18s.xml">
+      <configuration name="SignUpHandlerTest" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_ifIsFollowing - 2020.04.11 at 01h 52m 12s.xml">
-      <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" configurationId="AndroidJUnit" />
+    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 07m 45s.xml">
+      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_ifIsFollowing - 2020.04.11 at 01h 55m 45s.xml">
-      <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" configurationId="AndroidJUnit" />
+    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 08m 20s.xml">
+      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_ifIsFollowing - 2020.04.11 at 01h 56m 47s.xml">
-      <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" configurationId="AndroidJUnit" />
+    <history-entry file="LoginHandlerTest_testSearchUser_success - 2020.04.11 at 12h 08m 56s.xml">
+      <configuration name="LoginHandlerTest.testSearchUser_success" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="FollowUnfollowHandlerTest_ifIsFollowing - 2020.04.11 at 01h 57m 13s.xml">
-      <configuration name="FollowUnfollowHandlerTest.ifIsFollowing" configurationId="AndroidJUnit" />
+    <history-entry file="LoginHandlerTest_testSearchUser_fail - 2020.04.11 at 12h 09m 02s.xml">
+      <configuration name="LoginHandlerTest.testSearchUser_fail" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1071,7 +1004,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.502439" side_tool="true" weight="0.19908814" />
@@ -1083,11 +1016,11 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32902735" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.7165654" weight="0.46033993" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.7165654" visible="true" weight="0.2082153" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49772036" weight="0.6643059" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49924013" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6253799" weight="0.3796034" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4969605" visible="true" weight="0.41501418" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6253799" weight="0.32577905" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4969605" weight="0.18271954" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.28343466" side_tool="true" weight="0.3846154" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4986577" weight="0.28470254" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.47796354" weight="0.28470254" />
@@ -1191,9 +1124,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java</url>
-          <line>17</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1257,175 +1208,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/LogoutHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/LoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FolloweeRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowingRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/StatusRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/PagedResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/FolloweeResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/StatusResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/presenter/StatusPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetAllStatusTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="377" selection-start-line="377" selection-end-line="377" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/FollowingServiceProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ClientCommunicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/net/ServerFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="676" selection-start-line="676" selection-end-line="676" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/model/services/StatusServiceProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/AuthkeyDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFolloweeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="36" column="37" selection-start-line="36" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/GetFollowingHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/CreateStatusHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1433,38 +1215,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetFeedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="18" selection-start-line="15" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetStoryHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFollowingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/domain/Follow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowUnfollowRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1477,37 +1231,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
-          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/StoryHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1516,26 +1239,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StatusGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
@@ -1576,27 +1279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/AuthkeyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1607,17 +1293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/AuthkeyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1631,20 +1310,280 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+        <state relative-caret-position="351">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FeedHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="23" column="73" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FollowerDAO.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/FeedDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        <state relative-caret-position="221">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/status/GetFeedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/StatusServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/FollowUnfollowRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/domain/Follow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FolloweeHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/following/FollowUnfollowHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="674" selection-start-line="674" selection-end-line="674" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/SignUpDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/FollowUnfollowHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/SignUpServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/request/SignUpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/StoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/FollowingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/lambda/handler/login/SearchUserHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/services/LoginServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/byu/cs/cs340/model/services/response/SearchUserResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/SignUpHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/byu/cs/cs340/server/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/byu/cs/cs340/server/dao/LoginHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetFollowingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetAllStatusTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/GetPersonalStatusTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/followingFragments/FolloweeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="181" column="13" lean-forward="true" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/CreateStatusActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/PageViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/SectionsPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/UserPageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-985">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/asyncTasks/SearchUserTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/StoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="105" column="38" selection-start-line="105" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/byu/cs/tweeter/view/main/statusFragments/FeedFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="105" column="55" selection-start-line="105" selection-start-column="55" selection-end-line="105" selection-end-column="55" />
         </state>
       </provider>
     </entry>

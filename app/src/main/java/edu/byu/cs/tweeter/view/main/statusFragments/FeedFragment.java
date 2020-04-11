@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -161,6 +162,10 @@ public class FeedFragment extends Fragment implements StatusPresenter.View, Logi
                 }
 
             }
+            //Url
+
+            content.setText(spannableString);
+            content.setMovementMethod(LinkMovementMethod.getInstance());
 
         }
 

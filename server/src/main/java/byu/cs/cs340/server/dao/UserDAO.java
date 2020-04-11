@@ -12,11 +12,21 @@ import byu.cs.cs340.model.domain.User;
 import byu.cs.cs340.model.services.request.LoginRequest;
 import byu.cs.cs340.model.services.request.LogoutRequest;
 import byu.cs.cs340.model.services.request.SearchUserRequest;
+import byu.cs.cs340.model.services.request.SignUpRequest;
 import byu.cs.cs340.model.services.response.LoginResponse;
 import byu.cs.cs340.model.services.response.LogoutResponse;
 import byu.cs.cs340.model.services.response.SearchUserResponse;
+import byu.cs.cs340.model.services.response.SignUpResponse;
 
 public class UserDAO {
+    private static final String TableName = "users";
+
+    private static final String UsernameAttr = "username";
+    private static final String HandleAttr = "handle";
+    private static final String ImageAttr = "image_url";
+    private static final String NameAttr = "name";
+    private static final String PasswordAttr = "password";
+
     private static AuthkeyDAO authkeyDAO = new AuthkeyDAO();
     private static AmazonDynamoDB amazonDynamoDB = AmazonDynamoDBClientBuilder
             .standard()
@@ -26,8 +36,8 @@ public class UserDAO {
 
     // get user by username
     public User getUser(String username) {
-        Table table = dynamoDB.getTable("users");
-        Item item = table.getItem("username", username);
+        Table table = dynamoDB.getTable(TableName);
+        Item item = table.getItem(UsernameAttr, username);
         if (item == null) {
             return null;
         }
@@ -35,11 +45,11 @@ public class UserDAO {
     }
     // login to
     public LoginResponse loginResponse(LoginRequest request) {
-        Table table = dynamoDB.getTable("users");
+        Table table = dynamoDB.getTable(TableName);
         String username = request.getUsername();
         String password = request.getPassword();
 
-        Item item = table.getItem("username", username);
+        Item item = table.getItem(UsernameAttr, username);
         // check user exist
         if (item == null) {
             return new LoginResponse(false, "No such user");
@@ -53,8 +63,17 @@ public class UserDAO {
         String authkey = authkeyDAO.addAuthkey();
         return new LoginResponse(true, this.getItemUser(item),authkey);
     }
+
     public SearchUserResponse searchUser(SearchUserRequest alias) {
-        return new SearchUserResponse(false);
+        Table table = dynamoDB.getTable(TableName);
+
+        Item item = table.getItem(UsernameAttr, alias.getAlias().substring(1));
+        // check user exist
+        if (item == null) {
+            return new SearchUserResponse(false);
+        }
+
+        return new SearchUserResponse(true, getItemUser(item));
     }
 
     public LogoutResponse logout(LogoutRequest request) {
@@ -64,13 +83,46 @@ public class UserDAO {
     }
 
     private User getItemUser(Item item) {
-        String imageURL = (String)item.get("image_url");
-        String alias = (String)item.get("handle");
-        String name = (String)item.get("name");
+        String imageURL = (String)item.get(ImageAttr);
+        String alias = (String)item.get(HandleAttr);
+        String name = (String)item.get(NameAttr);
         String[] names = name.split(" ");
         String firstName = names[0];
         String lastName = names[1];
 
         return new User(firstName, lastName, alias, imageURL);
+    }
+
+    public SignUpResponse signUpResponse(SignUpRequest request) {
+        Table table = dynamoDB.getTable(TableName);
+        String username = request.getUsername();
+        String alias = "@" + request.getUsername();
+        String password = request.getPassword();
+        String image = request.getUrl();
+        String name = request.getFirstName() + " " + request.getLastName();
+        Item item;
+
+        try {
+            item = table.getItem(UsernameAttr, username);
+            // check user exist
+            if (item != null) {
+                throw new RuntimeException("user exist");
+            }
+
+            item = new Item()
+                    .withPrimaryKey(UsernameAttr, username)
+                    .with(HandleAttr, alias)
+                    .with(ImageAttr, image)
+                    .with(NameAttr, name)
+                    .with(PasswordAttr, password)
+            ;
+            table.putItem(item);
+        } catch (Exception e) {
+            return new SignUpResponse(false);
+        }
+
+        // add authkey
+        String authkey = authkeyDAO.addAuthkey();
+        return new SignUpResponse(true, getItemUser(item), authkey);
     }
 }

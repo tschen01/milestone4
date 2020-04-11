@@ -112,10 +112,7 @@ public class StoryDAO {
         table.deleteItem(HandleAttr, handle, TimestampAttr, time);
     }
 
-    public StatusResponse getStory(StatusRequest request) {
-        String handle = request.getUser().getAlias();
-        int pageSize = request.getLimit();
-        String lastTimestamp = request.getLastStatus();
+    public StatusResponse getStory(String handle, int pageSize, String lastTimestamp) {
         List<Status> statuses = new ArrayList<>();
         boolean more = false;
 

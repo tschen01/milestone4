@@ -115,10 +115,7 @@ public class FeedDAO {
         table.deleteItem(HandleAttr, handle, TimestampAttr, time);
     }
 
-    public StatusResponse getFeed(StatusRequest request) {
-        String handle = request.getUser().getAlias();
-        int pageSize = request.getLimit();
-        String lastTimestamp = request.getLastStatus();
+    public StatusResponse getFeed(String handle, int pageSize, String lastTimestamp) {
         List<Status> statuses = new ArrayList<>();
         boolean more = false;
 

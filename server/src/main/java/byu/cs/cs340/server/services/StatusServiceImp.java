@@ -14,13 +14,13 @@ public class StatusServiceImp implements StatusService {
     @Override
     public StatusResponse getPersonalStatuses(StatusRequest request) {
         StoryDAO dao = new StoryDAO();
-        return dao.getStory(request);
+        return dao.getStory(request.getUser().getAlias(), request.getLimit(), request.getLastStatus());
     }
 
     @Override
     public StatusResponse getAllStatus(StatusRequest request) {
         FeedDAO dao = new FeedDAO();
-        return dao.getFeed(request);
+        return dao.getFeed(request.getUser().getAlias(), request.getLimit(), request.getLastStatus());
     }
 
     @Override

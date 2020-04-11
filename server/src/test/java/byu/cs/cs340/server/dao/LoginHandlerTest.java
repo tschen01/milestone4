@@ -11,12 +11,12 @@ import byu.cs.cs340.model.services.response.SearchUserResponse;
 
 public class LoginHandlerTest {
     private UserDAO userDAO = new UserDAO();
+    User testUser = new User("Test ", "User", "@TestUser", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/images/donald_duck.png");
 
     @Test
     public void testSignUp_sucess() {
         LoginRequest request = new LoginRequest("Test", "User");
         LoginResponse response = userDAO.loginResponse(request);
-        User testUser = new User("Test ", "User", "@TestUser", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/images/donald_duck.png");
 
         Assertions.assertTrue(response.isSuccess());
         Assertions.assertEquals(testUser, response.getUser());
@@ -44,7 +44,6 @@ public class LoginHandlerTest {
     void testSearchUser_success() {
         SearchUserRequest request = new SearchUserRequest("@TestUser");
         SearchUserResponse response = userDAO.searchUser(request);
-        User testUser = new User("Test", "User", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/json/mnames.json");
 
         Assertions.assertTrue(response.isSuccess());
         Assertions.assertEquals(testUser, response.getUser());

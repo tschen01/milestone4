@@ -21,7 +21,7 @@ public class FeedHandlerTest {
     @Test
     void testGetFeed_userStatus() {
         User user = new User("Test ", "User", "@TestUser", "https://faculty.cs.byu.edu/~jwilkerson/cs340/tweeter/images/donald_duck.png");
-        StatusRequest request = new StatusRequest(user, 10, null);
+        StatusRequest request = new StatusRequest(user, Integer.MAX_VALUE, null);
         request.setAuthkey("authkey");
         StatusResponse response = feedHandler.handleRequest(request, null);
 
