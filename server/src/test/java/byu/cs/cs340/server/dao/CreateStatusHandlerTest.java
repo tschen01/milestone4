@@ -9,14 +9,14 @@ import byu.cs.cs340.model.services.response.CreateStatusResponse;
 import byu.cs.cs340.server.lambda.handler.status.CreateStatusHandler;
 
 public class CreateStatusHandlerTest {
-    private final User user1 = new User("string", "string", "");
+    private final User user1 = new User("User11", "11", "");
 
     CreateStatusHandler createStatusHandler = new CreateStatusHandler();
     CreateStatusDAO createStatusDAO = new CreateStatusDAO();
 
     @Test
     void testPost_success() {
-        CreateStatusRequest request = new CreateStatusRequest(user1, "", "");
+        CreateStatusRequest request = new CreateStatusRequest(user1, "lets go", "2012");
         request.setAuthkey("authkey");
         CreateStatusResponse response = createStatusHandler.handleRequest(request, null);
 

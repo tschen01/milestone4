@@ -94,7 +94,7 @@ public class StoryDAO {
         }
     }
 
-    public void addToFeed(String handle, String time, String content, String status_handle, String name, String image_url) {
+    public void addToStory(String handle, String time, String content, String name, String image_url) {
         Table table = dynamoDB.getTable(TableName);
 
         Item item = new Item()
